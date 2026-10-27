@@ -1098,6 +1098,25 @@ h2 em{font-family:var(--script)!important;font-style:normal!important;color:var(
 .bird-pair--top .bird{scale:1 -1;bottom:auto;top:0;transform-origin:50% 50%}
 @keyframes bopSway{from{rotate:-2.5deg}to{rotate:2.5deg}}
 @media (prefers-reduced-motion: reduce){.bird{animation:none!important}}
+
+/* ===== Flores coloridas (assets de boda-ana-y-francisco) ===== */
+.has-flor{position:relative;isolation:isolate}
+.has-flor > .container,.has-flor > .footer-inner{position:relative;z-index:1}
+.frail{position:absolute;top:6%;bottom:6%;width:clamp(58px,17vw,140px);background-size:cover;background-repeat:no-repeat;pointer-events:none;z-index:0;opacity:.92;
+  -webkit-mask-image:linear-gradient(to bottom,transparent 0,#000 90px,#000 calc(100% - 90px),transparent);mask-image:linear-gradient(to bottom,transparent 0,#000 90px,#000 calc(100% - 90px),transparent);
+  animation:florSway 7s ease-in-out infinite alternate;will-change:transform}
+.frail-l{left:0;background-position:left center;transform-origin:0 50%}
+.frail-r{right:0;background-position:right center;transform-origin:100% 50%;animation-duration:8.2s;animation-delay:-3s}
+@keyframes florSway{from{transform:translate3d(0,-6px,0) rotate(-1.2deg)}to{transform:translate3d(0,6px,0) rotate(1.2deg)}}
+.fband{position:absolute;left:-4%;right:-4%;bottom:0;height:clamp(150px,38vw,260px);pointer-events:none;z-index:0;overflow:hidden;
+  -webkit-mask-image:linear-gradient(to bottom,transparent 0,#000 45%,#000 85%,transparent);mask-image:linear-gradient(to bottom,transparent 0,#000 45%,#000 85%,transparent)}
+.fband i{position:absolute;inset:0;background-size:cover;background-position:center bottom;mix-blend-mode:multiply;transform-origin:50% 100%;animation:bandSway 8s cubic-bezier(.45,.05,.55,.95) infinite alternate}
+.fband-flip i{transform:scaleX(-1);animation-name:bandSwayFlip}
+@keyframes bandSway{0%{transform:skewX(-1.6deg)}100%{transform:skewX(1.8deg) translateX(-4px)}}
+@keyframes bandSwayFlip{0%{transform:scaleX(-1) skewX(-1.6deg)}100%{transform:scaleX(-1) skewX(1.8deg) translateX(-4px)}}
+.familia.has-flor,#siti.has-flor,.gifts.has-flor{padding-bottom:clamp(170px,40vw,260px)!important}
+footer.has-flor{padding-bottom:clamp(170px,40vw,270px)!important}
+@media (prefers-reduced-motion: reduce){.frail,.fband i{animation:none!important}}
 </style>
 </head>
 <body>
@@ -1202,7 +1221,8 @@ h2 em{font-family:var(--script)!important;font-style:normal!important;color:var(
   <div class="seam" style="--from:transparent;--to:var(--paper);height:40px" aria-hidden="true"></div>
 
   <!-- BIENVENIDA · CHIHUAHUA -->
-  <section class="section-paper bienvenida">
+  <section class="has-flor section-paper bienvenida">
+    <div class="frail frail-l" aria-hidden="true" style="background-image:url(floral/rail-left-wild.webp)"></div><div class="frail frail-r" aria-hidden="true" style="background-image:url(floral/rail-right-wild.webp)"></div>
     <div class="container">
       <div class="bienv-mono" aria-hidden="true">A<span>&amp;</span>J</div>
       <div class="eyebrow">Bienvenidos</div>
@@ -1249,7 +1269,8 @@ h2 em{font-family:var(--script)!important;font-style:normal!important;color:var(
   <div class="seam" style="--from:var(--paper);--to:var(--surface)" aria-hidden="true"></div>
 
   <!-- FAMILIA -->
-  <section class="section-surface familia">
+  <section class="has-flor section-surface familia">
+    <div class="fband" aria-hidden="true"><i style="background-image:url(floral/bg-footer.webp)"></i></div>
     <span class="mono-wm" aria-hidden="true">A &amp; J</span>
     <div class="container">
       <div class="eyebrow">Con la bendición de</div>
@@ -1302,7 +1323,8 @@ h2 em{font-family:var(--script)!important;font-style:normal!important;color:var(
   <div class="seam" style="--from:var(--paper);--to:var(--surface)" aria-hidden="true"></div>
 
   <!-- UBICACIONES -->
-  <section class="section-surface locs">
+  <section class="has-flor section-surface locs">
+    <div class="frail frail-l" aria-hidden="true" style="background-image:url(floral/rail-left-meadow.webp)"></div><div class="frail frail-r" aria-hidden="true" style="background-image:url(floral/rail-right-meadow.webp)"></div>
     <div class="container">
       <div style="text-align:center">
         <div class="eyebrow">Acompáñanos</div>
@@ -1354,7 +1376,8 @@ h2 em{font-family:var(--script)!important;font-style:normal!important;color:var(
   </section>
 
   <!-- ITINERARIO -->
-  <section id="siti" style="padding:min(8vh,72px) 0 min(10vh,90px)">
+  <section class="has-flor" id="siti" style="padding:min(8vh,72px) 0 min(10vh,90px)">
+    <div class="fband" aria-hidden="true"><i style="background-image:url(floral/hero-bottom.webp)"></i></div>
     <span class="mono-wm" aria-hidden="true">A &amp; J</span>
     <div class="itv3-orb" style="width:300px;height:300px;top:5%;left:-80px;background:radial-gradient(circle,rgba(201,160,68,.07),transparent 70%);"></div>
     <div class="itv3-orb" style="width:240px;height:240px;bottom:8%;right:-60px;background:radial-gradient(circle,rgba(217,144,10,.08),transparent 70%);"></div>
@@ -1442,7 +1465,8 @@ h2 em{font-family:var(--script)!important;font-style:normal!important;color:var(
   <div class="seam" style="--from:var(--surface);--to:var(--bg)" aria-hidden="true"></div>
 
   <!-- DRESS CODE -->
-  <section class="section-bg dress">
+  <section class="has-flor section-bg dress">
+    <div class="frail frail-l" aria-hidden="true" style="background-image:url(floral/rail-left-wild.webp)"></div><div class="frail frail-r" aria-hidden="true" style="background-image:url(floral/rail-right-wild.webp)"></div>
     <div class="container">
       <div class="eyebrow">Código de vestimenta</div>
       <h2>Formal <em>&amp; Dinámico</em></h2>
@@ -1522,7 +1546,8 @@ h2 em{font-family:var(--script)!important;font-style:normal!important;color:var(
   <div class="seam" style="--from:var(--paper);--to:var(--surface)" aria-hidden="true"></div>
 
   <!-- MESA DE REGALOS / LLUVIA DE SOBRES -->
-  <section class="section-surface gifts" style="padding:min(12vh,110px) 0 min(14vh,130px);text-align:center;" aria-label="Mesa de regalos">
+  <section class="has-flor section-surface gifts" style="padding:min(12vh,110px) 0 min(14vh,130px);text-align:center;" aria-label="Mesa de regalos">
+    <div class="fband fband-flip" aria-hidden="true"><i style="background-image:url(floral/bg-footer.webp)"></i></div>
     <div class="container">
       <div class="gifts-head">
         <h2 style="margin-bottom:16px;">Un detalle <em>de corazón</em></h2>
@@ -1668,7 +1693,8 @@ h2 em{font-family:var(--script)!important;font-style:normal!important;color:var(
   </section>
 
   <!-- FOOTER -->
-  <footer>
+  <footer class="has-flor">
+    <div class="fband" aria-hidden="true"><i style="background-image:url(floral/bg-footer.webp)"></i></div>
     <div class="container footer-inner">
       <svg class="footer-ornament" viewBox="0 0 260 60" fill="none" aria-hidden="true">
         <g stroke="var(--gold-soft)" stroke-width=".8" fill="none">
