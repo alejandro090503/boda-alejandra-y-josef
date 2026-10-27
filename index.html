@@ -1123,7 +1123,7 @@ h2 em{font-family:var(--script)!important;font-style:normal!important;color:var(
 <!-- ENVELOPE OPENING -->
 <div id="envelope-screen" role="button" aria-label="Toca para abrir la invitación" tabindex="0">
   <img id="env-image" src="sobre.webp" alt="">
-  <video id="env-video" muted playsinline preload="auto">
+  <video id="env-video" muted playsinline preload="auto" poster="sobre.webp">
     <source src="https://bsjoelxktbvlavfoozhk.supabase.co/storage/v1/object/public/fotos-clientes/video/boda-fernanda-y-ricardo/sobre5.mp4" type="video/mp4">
   </video>
   <div id="env-hint">
@@ -2062,10 +2062,18 @@ function launchInvitation(){
 
     if(envVideo){
       // Cruzar: imagen → video
-      envVideo.currentTime = 0;
+      // Sin salto: la imagen queda debajo hasta que el video ya pintó su primer cuadro
+      var shown = false;
+      function showVideo(){
+        if(shown) return; shown = true;
+        gsap.set(envVideo,{opacity:1});
+        gsap.to(envImage,{opacity:0,duration:.25,delay:.12});
+      }
+      if(envVideo.requestVideoFrameCallback){
+        envVideo.requestVideoFrameCallback(function(){ showVideo(); });
+      }
+      envVideo.addEventListener('playing', function(){ setTimeout(showVideo, 60); }, {once:true});
       envVideo.play().catch(()=>{ triggerFlash(); });
-      gsap.to(envImage,{opacity:0,duration:.4});
-      gsap.to(envVideo,{opacity:1,duration:.4});
 
       // Escuchar timeupdate para cortar en segundo 3
       envVideo.addEventListener('timeupdate', function onTick(){
