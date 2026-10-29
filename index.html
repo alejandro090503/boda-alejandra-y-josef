@@ -1288,6 +1288,28 @@ h2{margin-top:-.22em}
 .wrap > section.bienvenida,.wrap > section.padrinos,.wrap > section.hospedaje,.wrap > section.kids-policy,.wrap > section.album{padding-top:clamp(150px,36vw,220px)!important}
 .bienvenida > .container,.padrinos > .container,.hospedaje > .container,.kids-policy > .container,.album > .container{position:relative;z-index:1}
 @media (prefers-reduced-motion: reduce){.ftop i{animation:none!important}}
+
+/* Padrinos carrusel */
+.pd-carousel{position:relative;max-width:380px;margin:26px auto 0}
+.pd-viewport{overflow:hidden}
+.pd-track{display:flex;transition:transform .55s cubic-bezier(.4,0,.2,1)}
+.pd-slide{flex:0 0 100%;box-sizing:border-box;display:flex;flex-direction:column;align-items:center;text-align:center;padding:14px 40px}
+.pd-icon{width:78px;height:78px;margin-bottom:16px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:#fffdf9;border:1px solid rgba(201,162,39,.55);box-shadow:0 10px 26px -12px rgba(140,17,73,.35)}
+.pd-icon svg{width:52px;height:52px;fill:none;stroke:#C2410C;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.pd-rol{font-family:var(--display);font-weight:700;font-size:15px;letter-spacing:.28em;text-transform:uppercase;color:#B0175F;margin-bottom:12px}
+.pd-names{font-family:var(--display);font-style:italic;font-weight:600;font-size:21px;line-height:1.55;color:#2C2C2C}
+.pd-arrow{position:absolute;top:53px;transform:translateY(-50%);width:38px;height:38px;display:flex;align-items:center;justify-content:center;background:rgba(255,253,249,.9);border:1px solid rgba(201,162,39,.5);border-radius:50%;cursor:pointer;color:#8C1149;z-index:2;padding:0}
+.pd-arrow svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2}
+.pd-arrow.prev{left:0}.pd-arrow.next{right:0}
+.pd-dots{display:flex;justify-content:center;gap:9px;margin-top:18px}
+.pd-dots button{width:8px;height:8px;border-radius:50%;border:none;background:rgba(140,17,73,.25);cursor:pointer;padding:0;transition:background .25s,transform .25s}
+.pd-dots button.active{background:#B0175F;transform:scale(1.35)}
+/* Fondos blancos y crema (dorado sobre blanco) */
+:root{--bg:#fffdf9!important;--surface:#fdf9f2!important;--paper:#ffffff!important}
+.section-bg.countdown{background-color:#fffdf9!important}
+.hero{background-color:#fffdf9!important}
+#envelope-screen.ld,.ld-half{background:#fffdf9!important}
+.ink-bg{opacity:.7!important}.ink-oval{opacity:.8!important}
 </style>
 </head>
 <body>
@@ -1478,28 +1500,18 @@ h2{margin-top:-.22em}
     <div class="container">
       <div class="eyebrow">Nos acompañan</div>
       <h2>Nuestros <em>padrinos</em></h2>
-      <div class="padrinos-grid">
-        <div class="padrino-card" data-tilt>
-          <div class="padrino-tipo">Velación</div>
-          <div class="padrino-names">Elvira González<br>&amp; Sergio Torres</div>
-        </div>
-        <div class="padrino-card" data-tilt>
-          <div class="padrino-tipo">Arras</div>
-          <div class="padrino-names">Antonieta Arvizu<br>&amp; Manuel Palma</div>
-        </div>
-        <div class="padrino-card" data-tilt>
-          <div class="padrino-tipo">Lazo</div>
-          <div class="padrino-names">Dally Murcia<br>&amp; Rodolfo Calvo</div>
-        </div>
-        <div class="padrino-card" data-tilt>
-          <div class="padrino-tipo">Damas de honor</div>
-          <div class="padrino-names">Alejandra Torres Castillo<br>Renata Palma Arvizu<br>Sara Sehhizadeh<br>Sofía Gómez</div>
-        </div>
-        <div class="padrino-card" data-tilt>
-          <div class="padrino-tipo">Best Men</div>
-          <div class="padrino-names">Alex Gómez<br>Tylor Sommerer<br>Cassie</div>
-        </div>
-      </div>
+      <div class="pd-carousel">
+        <button class="pd-arrow prev" aria-label="Anterior"><svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg></button>
+        <button class="pd-arrow next" aria-label="Siguiente"><svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></button>
+        <div class="pd-viewport"><div class="pd-track" id="pdTrack">
+          <div class="pd-slide"><div class="pd-icon"><svg viewBox="0 0 64 64"><rect x="22" y="28" width="8" height="24" rx="1.5"/><rect x="34" y="28" width="8" height="24" rx="1.5"/><line x1="26" y1="28" x2="26" y2="22"/><line x1="38" y1="28" x2="38" y2="22"/><path d="M26 22c-2.2-2.2-2.2-4.5 0-6.8 2.2 2.3 2.2 4.6 0 6.8Z"/><path d="M38 22c-2.2-2.2-2.2-4.5 0-6.8 2.2 2.3 2.2 4.6 0 6.8Z"/><line x1="17" y1="52" x2="47" y2="52"/></svg></div><div class="pd-rol">Velación</div><p class="pd-names">Elvira González<br>y Sergio Torres</p></div>
+          <div class="pd-slide"><div class="pd-icon"><svg viewBox="0 0 64 64"><circle cx="25" cy="29" r="12"/><circle cx="39" cy="38" r="12"/><line x1="25" y1="25" x2="25" y2="33"/><line x1="21" y1="29" x2="29" y2="29"/></svg></div><div class="pd-rol">Arras</div><p class="pd-names">Antonieta Arvizu<br>y Manuel Palma</p></div>
+          <div class="pd-slide"><div class="pd-icon"><svg viewBox="0 0 64 64"><path d="M44 24c-6.6 0-10 8-12 8s-5.4-8-12-8a8 8 0 000 16c6.6 0 10-8 12-8s5.4 8 12 8a8 8 0 000-16Z"/></svg></div><div class="pd-rol">Lazo</div><p class="pd-names">Dally Murcia<br>y Rodolfo Calvo</p></div>
+          <div class="pd-slide"><div class="pd-icon"><svg viewBox="0 0 64 64"><path d="M32 56 L26 38M32 56 L38 38M32 56 L32 36"/><circle cx="26" cy="30" r="6.5"/><circle cx="38" cy="30" r="6.5"/><circle cx="32" cy="22" r="6.5"/><path d="M23 52 Q32 47 41 52"/></svg></div><div class="pd-rol">Damas de honor</div><p class="pd-names">Alejandra Torres Castillo<br>Renata Palma Arvizu<br>Sara Sehhizadeh<br>Sofía Gómez</p></div>
+          <div class="pd-slide"><div class="pd-icon"><svg viewBox="0 0 64 64"><path d="M32 30 L16 21 L16 39 Z"/><path d="M32 30 L48 21 L48 39 Z"/><rect x="28.5" y="26.5" width="7" height="7" rx="1.5"/></svg></div><div class="pd-rol">Best Men</div><p class="pd-names">Alex Gómez<br>Tylor Sommerer<br>Cassie</p></div>
+        </div></div>
+        <div class="pd-dots" id="pdDots"><button class="active" aria-label="Padrino 1"></button><button aria-label="Padrino 2"></button><button aria-label="Padrino 3"></button><button aria-label="Padrino 4"></button><button aria-label="Padrino 5"></button></div>
+            </div>
     </div>
   </section>
 
@@ -2874,6 +2886,21 @@ window.addEventListener('resize',()=>ScrollTrigger.refresh());
     }
     btn.addEventListener('click', toggle); hint.addEventListener('click', toggle);
   }
+})();
+
+// Padrinos: carrusel horizontal (diseño boda-roxana-y-omar)
+(function(){
+  var track=document.getElementById('pdTrack'); if(!track) return;
+  var n=track.children.length, dots=document.querySelectorAll('#pdDots button'), idx=0, timer=null;
+  function go(i){ idx=(i+n)%n; track.style.transform='translateX('+(-idx*100)+'%)'; dots.forEach(function(d,k){d.classList.toggle('active',k===idx);}); }
+  function auto(){ clearInterval(timer); if(!prefersReduced) timer=setInterval(function(){go(idx+1);},5200); }
+  document.querySelector('.pd-arrow.prev').addEventListener('click',function(){go(idx-1);auto();});
+  document.querySelector('.pd-arrow.next').addEventListener('click',function(){go(idx+1);auto();});
+  dots.forEach(function(d,k){d.addEventListener('click',function(){go(k);auto();});});
+  var sx=0,sy=0;
+  track.addEventListener('touchstart',function(e){sx=e.touches[0].clientX;sy=e.touches[0].clientY;},{passive:true});
+  track.addEventListener('touchend',function(e){var dx=e.changedTouches[0].clientX-sx,dy=e.changedTouches[0].clientY-sy;if(Math.abs(dx)>40&&Math.abs(dx)>Math.abs(dy)){go(dx<0?idx+1:idx-1);auto();}},{passive:true});
+  go(0); auto();
 })();
 </script>
 </body>
