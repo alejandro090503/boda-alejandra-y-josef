@@ -1273,6 +1273,9 @@ h2{margin-top:-.22em}
 
 .locs .loc-card{background:rgba(255,253,249,.95)!important;border:1px solid rgba(201,162,39,.5)!important;border-radius:22px!important;box-shadow:0 18px 40px -18px rgba(140,17,73,.35),0 2px 8px rgba(0,0,0,.05)!important;padding:16px 16px 28px!important}
 .countdown-grid{display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:6px!important;max-width:420px;margin:0 auto}
+
+.cd-lbl{font-size:11px!important;letter-spacing:.08em!important;padding-left:0!important;white-space:nowrap;overflow:visible!important}
+.cd-block{overflow:visible!important;text-align:center}
 </style>
 </head>
 <body>
@@ -2794,9 +2797,9 @@ window.addEventListener('resize',()=>ScrollTrigger.refresh());
       var m={r:Math.round((ca.r+cb.r)/2),g:Math.round((ca.g+cb.g)/2),b:Math.round((ca.b+cb.b)/2)};
       var idA='sf'+i+'a', idB='sf'+i+'b'; A.setAttribute('data-sfa',idA); B.setAttribute('data-sfb',idB);
       var hA = A.classList.contains('hero') ? 90 : 200;
-      css += '[data-sfa="'+idA+'"]::after{content:"";position:absolute;inset:auto;left:0;right:0;bottom:0;height:'+hA+'px;background:'+grad(m,'to top')+';pointer-events:none;z-index:-1;opacity:1;-webkit-mask-image:none;mask-image:none}';
-      if(!A.classList.contains('hero')) css += '[data-sfb="'+idB+'"]::before{content:"";position:absolute;inset:auto;left:0;right:0;top:0;height:200px;background:'+grad(m,'to bottom')+';pointer-events:none;z-index:-1;opacity:1;-webkit-mask-image:none;mask-image:none}';
-      else css += '[data-sfb="'+idB+'"]::before{content:"";position:absolute;inset:auto;left:0;right:0;top:0;height:90px;background:'+grad(m,'to bottom')+';pointer-events:none;z-index:-1;opacity:1;-webkit-mask-image:none;mask-image:none}';
+      css += '[data-sfa="'+idA+'"]::after{content:""!important;position:absolute!important;inset:auto 0 0 0!important;height:'+hA+'px!important;background:'+grad(m,'to top')+'!important;pointer-events:none;z-index:-1!important;opacity:1!important;-webkit-mask-image:none!important;mask-image:none!important;display:block!important}';
+      if(!A.classList.contains('hero')) css += '[data-sfb="'+idB+'"]::before{content:""!important;position:absolute!important;inset:0 0 auto 0!important;height:200px!important;background:'+grad(m,'to bottom')+'!important;pointer-events:none;z-index:-1!important;opacity:1!important;-webkit-mask-image:none!important;mask-image:none!important;display:block!important}';
+      else css += '[data-sfb="'+idB+'"]::before{content:""!important;position:absolute!important;inset:0 0 auto 0!important;height:90px!important;background:'+grad(m,'to bottom')+'!important;pointer-events:none;z-index:-1!important;opacity:1!important;-webkit-mask-image:none!important;mask-image:none!important;display:block!important}';
     }
     st.textContent = css; document.head.appendChild(st);
   }
