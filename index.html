@@ -1210,7 +1210,8 @@ h2{margin-top:-.22em}
 .hero-name .hero-and{margin:0 0 4px!important;line-height:1}
 
 /* ===== Loader del Save the Date ===== */
-#envelope-screen.ld{position:fixed;inset:0;z-index:9998;background:#faf8f5!important;overflow:hidden;cursor:pointer;display:block!important;-webkit-tap-highlight-color:transparent}
+#envelope-screen.ld{position:fixed;inset:0;z-index:9998;background:#faf8f5!important;overflow:hidden;cursor:pointer;display:block;-webkit-tap-highlight-color:transparent}
+#envelope-screen.ld.gone{display:none!important}
 .ld-half{position:absolute;left:0;right:0;height:50.5%;background:#faf8f5;transition:transform 1.3s cubic-bezier(.76,0,.24,1);overflow:hidden}
 .ld-top{top:0}.ld-bottom{bottom:0}
 .ld.is-opening .ld-top{transform:translateY(-102%)}
@@ -1236,7 +1237,7 @@ h2{margin-top:-.22em}
 @keyframes ldShine{0%{background-position:100% 0}60%,100%{background-position:0 0}}
 .ld-date{font-family:var(--display);font-weight:700;font-size:22px;letter-spacing:.32em;padding-left:.32em;color:#2C2C2C;opacity:0;animation:ldFade 1s 1.6s ease forwards}
 @keyframes ldFade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
-#env-hint.ld-tap{position:static!important;display:flex!important;flex-direction:row!important;align-items:center;gap:10px;margin-top:26px;font-family:var(--display);font-weight:700;font-size:15px;letter-spacing:.28em;text-transform:uppercase;color:#8C1149;opacity:0;animation:ldFade 1s 2.4s ease forwards}
+#env-hint.ld-tap{position:static!important;transform:none!important;left:auto!important;right:auto!important;bottom:auto!important;top:auto!important;width:auto!important;padding:0!important;display:flex!important;flex-direction:row!important;align-items:center;gap:10px;margin-top:26px;font-family:var(--display);font-weight:700;font-size:15px;letter-spacing:.28em;text-transform:uppercase;color:#8C1149;opacity:0;animation:ldFade 1s 2.4s ease forwards}
 .ld-tap-dot{width:9px;height:9px;border-radius:50%;background:#D41F7F;animation:tapPulse 1.6s ease-out infinite}
 @keyframes tapPulse{0%{box-shadow:0 0 0 0 rgba(212,31,127,.55)}100%{box-shadow:0 0 0 12px rgba(212,31,127,0)}}
 @media (prefers-reduced-motion: reduce){.ld *{animation-duration:.01s!important;animation-delay:0s!important}}
@@ -2243,7 +2244,7 @@ function launchInvitation(){
     envScreen.classList.add('is-opening');
     wrap.style.visibility='visible';
     setTimeout(function(){
-      envScreen.style.display='none';
+      envScreen.classList.add('gone'); envScreen.style.display='none';
       if(envFlash) envFlash.style.display='none';
       launchInvitation();
     }, 1350);
