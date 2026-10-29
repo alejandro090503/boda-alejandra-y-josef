@@ -1276,6 +1276,18 @@ h2{margin-top:-.22em}
 
 .cd-lbl{font-size:11px!important;letter-spacing:.08em!important;padding-left:0!important;white-space:nowrap;overflow:visible!important}
 .cd-block{overflow:visible!important;text-align:center}
+
+/* Borde superior de flores con capa difuminada detrás (como la portada) */
+.ftop{position:absolute;left:-4%;right:-4%;top:0;height:clamp(150px,40vw,250px);pointer-events:none;z-index:0}
+.ftop i{position:absolute;inset:0;background:url(floral/hero-top.webp) center top/cover no-repeat;transform-origin:50% 0}
+.ftop-back{opacity:.32;transform:scale(1.18) translateY(18px);-webkit-mask-image:linear-gradient(to bottom,#000 35%,transparent 100%);mask-image:linear-gradient(to bottom,#000 35%,transparent 100%);animation:ftopSway 9s ease-in-out infinite alternate-reverse}
+.ftop-front{mix-blend-mode:multiply;-webkit-mask-image:linear-gradient(to bottom,#000 30%,transparent 88%);mask-image:linear-gradient(to bottom,#000 30%,transparent 88%);animation:ftopSway 7s ease-in-out infinite alternate}
+@keyframes ftopSway{from{transform:skewX(-1.4deg)}to{transform:skewX(1.6deg) translateX(-4px)}}
+.ftop-back{animation-name:ftopSwayBack}
+@keyframes ftopSwayBack{from{transform:scale(1.18) translateY(18px) skewX(1.2deg)}to{transform:scale(1.18) translateY(18px) skewX(-1.2deg) translateX(5px)}}
+.wrap > section.bienvenida,.wrap > section.padrinos,.wrap > section.hospedaje,.wrap > section.kids-policy,.wrap > section.album{padding-top:clamp(150px,36vw,220px)!important}
+.bienvenida > .container,.padrinos > .container,.hospedaje > .container,.kids-policy > .container,.album > .container{position:relative;z-index:1}
+@media (prefers-reduced-motion: reduce){.ftop i{animation:none!important}}
 </style>
 </head>
 <body>
@@ -1389,6 +1401,7 @@ h2{margin-top:-.22em}
 
   <!-- BIENVENIDA · CHIHUAHUA -->
   <section class="has-flor section-paper bienvenida">
+    <div class="ftop" aria-hidden="true"><i class="ftop-back"></i><i class="ftop-front"></i></div>
     <div class="ink-bg" aria-hidden="true"><i style="background-image:url(ink/ink-top.webp)"></i></div>
     
     <div class="container">
@@ -1461,6 +1474,7 @@ h2{margin-top:-.22em}
 
   <!-- PADRINOS -->
   <section class="section-paper padrinos">
+    <div class="ftop" aria-hidden="true"><i class="ftop-back"></i><i class="ftop-front"></i></div>
     <div class="container">
       <div class="eyebrow">Nos acompañan</div>
       <h2>Nuestros <em>padrinos</em></h2>
@@ -1618,6 +1632,7 @@ h2{margin-top:-.22em}
 
   <!-- HOSPEDAJE -->
   <section class="section-surface hospedaje">
+    <div class="ftop" aria-hidden="true"><i class="ftop-back"></i><i class="ftop-front"></i></div>
     <div class="container">
       <div class="eyebrow">¿Dónde quedarte?</div>
       <h2>Hospedaje <em>recomendado</em></h2>
@@ -1702,6 +1717,7 @@ h2{margin-top:-.22em}
 
   <!-- SOLO ADULTOS · NO NIÑOS -->
   <section class="section-paper kids-policy">
+    <div class="ftop" aria-hidden="true"><i class="ftop-back"></i><i class="ftop-front"></i></div>
     <div class="container">
       <div class="kids-icon" aria-hidden="true">
         <svg viewBox="0 0 24 24"><path d="M8 3h8l-1 7a3 3 0 01-6 0L8 3z"/><line x1="12" y1="13" x2="12" y2="20"/><line x1="8" y1="20" x2="16" y2="20"/></svg>
@@ -1764,6 +1780,7 @@ h2{margin-top:-.22em}
 
   <!-- ÁLBUM COMPARTIDO + QR -->
   <section class="section-bg album">
+    <div class="ftop" aria-hidden="true"><i class="ftop-back"></i><i class="ftop-front"></i></div>
     <div class="ink-bg" aria-hidden="true"><i style="background-image:url(ink/ink-corner.webp)"></i></div>
     <div class="container">
       <div class="eyebrow">Comparte el momento</div>
