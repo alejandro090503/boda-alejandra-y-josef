@@ -1310,6 +1310,27 @@ h2{margin-top:-.22em}
 .hero{background-color:#fffdf9!important}
 #envelope-screen.ld,.ld-half{background:#fffdf9!important}
 .ink-bg{opacity:.7!important}.ink-oval{opacity:.8!important}
+
+/* Nuestra historia */
+.historia{text-align:center}
+.historia > .container{position:relative;z-index:1;max-width:560px}
+.hs-text{font-family:var(--display);font-weight:600;font-size:18px;line-height:1.75;color:#2C2C2C;margin:0 auto 22px;max-width:480px}
+.hs-h3{font-family:var(--script);font-weight:400;font-size:clamp(34px,9vw,44px);color:#8C1149;margin:34px 0 12px;line-height:1.25;padding:.1em .3em}
+.hs-photo{margin:10px auto 30px;max-width:300px;background:#fff;padding:10px 10px 14px;border-radius:6px;box-shadow:0 18px 40px -16px rgba(140,17,73,.35);animation:levitate 6.5s ease-in-out infinite}
+.hs-photo img{width:100%;display:block;border-radius:3px}
+.hs-photo figcaption{font-family:var(--script);font-size:22px;color:#C2410C;margin-top:8px}
+.hs-tilt-l{rotate:-2deg}.hs-tilt-r{rotate:2deg;animation-delay:-2.2s}
+.hs-17{margin:26px auto 10px;padding:26px 20px 8px;border:1px solid rgba(201,162,39,.5);border-radius:22px;background:rgba(255,253,249,.92);max-width:460px}
+.hs-17 .hs-h3{margin-top:0}
+.hs-17-num{display:flex;justify-content:center;align-items:center;gap:14px;font-family:var(--display);font-weight:700;font-size:64px;color:#B0175F;line-height:1;margin-bottom:14px}
+.hs-17-num i{font-style:normal;font-size:30px;color:#C2410C}
+.hs-list{display:grid;gap:12px;margin:8px auto 26px;max-width:480px;text-align:left}
+.hs-item{background:rgba(255,253,249,.92);border:1px solid rgba(201,162,39,.4);border-left:3px solid #B0175F;border-radius:14px;padding:14px 16px}
+.hs-item b{display:block;font-family:var(--display);font-weight:700;font-size:18px;color:#8C1149;margin-bottom:4px}
+.hs-item span{font-family:var(--display);font-weight:600;font-size:17px;line-height:1.6;color:#2C2C2C}
+.hs-close{font-style:italic}
+.hs-sign{font-family:var(--script);font-size:40px;color:#8C1149;margin:6px 0 0}
+.hs-tag{font-family:var(--display);font-weight:700;font-size:16px;letter-spacing:.08em;color:#C2410C}
 </style>
 </head>
 <body>
@@ -1458,6 +1479,45 @@ h2{margin-top:-.22em}
   </section>
 
   <div class="seam" style="--from:var(--surface);--to:var(--paper)" aria-hidden="true"></div>
+
+  <!-- NUESTRA HISTORIA (texto del cliente, literal) -->
+  <section class="section-paper historia" id="historia">
+    <div class="ink-bg" aria-hidden="true"><i style="background-image:url(ink/ink-corner.webp)"></i></div>
+    <div class="container">
+      <div class="eyebrow">Alejandra &amp; Josef</div>
+      <h2>Nuestra <em>historia</em></h2>
+      <p class="hs-text">Nuestra historia empezó antes de que naciéramos: nuestras mamás estaban embarazadas de nosotros al mismo tiempo. La vida después nos llevó por caminos distintos, hasta que a los 15 años volvimos a encontrarnos cuando Josef fue uno de los chambelanes en los XV años de Alejandra. Ese baile fue el comienzo de todo.</p>
+      <figure class="hs-photo hs-tilt-l"><img src="hist-mamas.webp" alt="Nuestras mamás embarazadas juntas" loading="lazy" decoding="async"><figcaption>Nuestras mamás, embarazadas juntas</figcaption></figure>
+      <p class="hs-text">Con el tiempo, la amistad se convirtió en amor, y hace siete años empezamos nuestro noviazgo. Desde entonces hemos aprendido que lo mejor de la vida se disfruta en equipo.</p>
+
+      <div class="hs-17">
+        <h3 class="hs-h3">¿Por qué el 17?</h3>
+        <div class="hs-17-num"><span>1</span><i>+</i><span>7</span></div>
+        <p class="hs-text">Porque el 17 somos los dos. Alejandra nació el 1 de marzo y Josef el 7 de mayo. Juntos formamos el 17, y por eso elegimos el 17 de julio de 2027 para unir nuestras vidas para siempre.</p>
+      </div>
+
+      <h3 class="hs-h3">Lo que nos hace “nosotros”</h3>
+      <div class="hs-list">
+        <div class="hs-item"><b>Nuestra familia de cuatro patas</b><span>Amamos a los animales, sobre todo a los perros. Nuestra consentida es Atenea, una dálmata que ha estado con nosotros en esta aventura.</span></div>
+        <div class="hs-item"><b>El deporte</b><span>Josef es fanático del fútbol soccer, y Alejandra jugó lacrosse durante varios años. En casa siempre hay un partido que ver.</span></div>
+        <div class="hs-item"><b>La comida</b><span>Nada como unos buenos tacos al pastor o una birria para celebrar.</span></div>
+        <div class="hs-item"><b>La playa y la naturaleza</b><span>Nos encanta el mar, caminar al aire libre y desconectarnos del mundo.</span></div>
+        <div class="hs-item"><b>Piratas del Caribe</b><span>Somos fans de la saga, y nuestra vida juntos también ha sido una gran aventura.</span></div>
+        <div class="hs-item"><b>La música</b><span>De Bad Bunny al rock de los 80, nuestra lista de canciones tiene de todo.</span></div>
+        <div class="hs-item"><b>Los libros</b><span>Compartimos el gusto por la lectura.</span></div>
+      </div>
+      <figure class="hs-photo hs-tilt-r"><img src="hist-atenea.webp" alt="Alejandra y Josef con Atenea" loading="lazy" decoding="async"><figcaption>Con Atenea</figcaption></figure>
+
+      <h3 class="hs-h3">La propuesta</h3>
+      <p class="hs-text">En Savannah, Georgia, en la plaza principal del centro histórico, Josef se arrodilló frente a Alejandra y le hizo la gran pregunta. Ella, con el corazón a mil, dijo que sí.</p>
+
+      <h3 class="hs-h3">Una nueva etapa</h3>
+      <p class="hs-text">Alejandra estudió Finanzas, y Josef sirve con orgullo en la Fuerza Espacial de los Estados Unidos. Después de la boda comenzaremos nuestra vida de casados en Colorado Springs, con Atenea, muchas ganas y un mapa lleno de nuevas aventuras.</p>
+      <p class="hs-text hs-close">Gracias por ser parte de nuestra historia. Nos encantará celebrar contigo el inicio de este nuevo capítulo.</p>
+      <p class="hs-sign">Alejandra &amp; Josef</p>
+      <p class="hs-tag">#AlejandraYJosef2027</p>
+    </div>
+  </section>
 
   <!-- FECHA + FOTO EN ÓVALO -->
   <section class="section-paper date-statement" style="text-align:center">
