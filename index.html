@@ -1384,7 +1384,7 @@ h2{margin-top:-.22em}
 .rsvp-deadline{font-size:15px!important;font-weight:700!important;color:#8C1149!important;letter-spacing:.06em!important}
 .countdown-sub{font-family:var(--display)!important;font-weight:600!important;font-style:italic;font-size:19px!important}
 /* idioma */
-#env-hint.ld-lang{position:static!important;transform:none!important;left:auto!important;right:auto!important;bottom:auto!important;top:auto!important;width:auto!important;padding:0!important;display:flex!important;flex-direction:row!important}
+#env-hint.ld-lang{pointer-events:auto!important;position:static!important;transform:none!important;left:auto!important;right:auto!important;bottom:auto!important;top:auto!important;width:auto!important;padding:0!important;display:flex!important;flex-direction:row!important}
 .ld-lang{display:flex;align-items:center;gap:14px;margin-top:26px;opacity:0;animation:ldFade 1s 2.2s ease forwards}
 .ld-lang button{display:flex;align-items:center;gap:9px;padding:12px 18px;border-radius:999px;border:1px solid rgba(140,17,73,.35);background:rgba(255,253,249,.85);font-family:var(--display);font-weight:700;font-size:18px;letter-spacing:.06em;color:#8C1149;cursor:pointer}
 .ld-lang-sep{width:1px;height:26px;background:rgba(140,17,73,.3)}
@@ -1392,6 +1392,11 @@ h2{margin-top:-.22em}
 .lang-toggle{position:fixed;top:max(14px,env(safe-area-inset-top));right:14px;z-index:60;display:flex;align-items:center;gap:8px;padding:8px 14px;border-radius:999px;border:1px solid rgba(140,17,73,.25);background:rgba(255,253,249,.9);font-family:var(--display);font-weight:700;font-size:15px;letter-spacing:.1em;color:#9a9a9a;cursor:pointer;box-shadow:0 6px 16px -10px rgba(140,17,73,.5)}
 .lang-toggle .on{color:#8C1149}
 .lang-toggle i{width:1px;height:14px;background:rgba(140,17,73,.3)}
+
+#env-hint.ld-lang button{pointer-events:auto!important}
+
+.gifts-sub{font-family:var(--display)!important;font-style:normal!important;font-weight:600!important;font-size:18px!important;line-height:1.7!important;color:#2C2C2C!important;opacity:1!important}
+.bank p{font-size:18px}
 </style>
 </head>
 <body>
@@ -2190,7 +2195,7 @@ const prefersReduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
   });
 
   if (urlPara) {
-    noteEl.textContent = 'Esta invitación es para ' + urlPara;
+    noteEl.textContent = ((window.ajLang&&ajLang()==='en')?'This invitation is for ':'Esta invitación es para ') + urlPara;
     noteEl.style.display = 'block';
     dispEl.style.display = 'flex';
     // Guard silencioso: bloqueamos hasta saber pases reales
