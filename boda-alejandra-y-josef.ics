@@ -1,0 +1,13 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Elysium//Boda Alejandra y Josef//ES
+BEGIN:VEVENT
+UID:boda-alejandra-josef-20270717@elysium
+DTSTAMP:20261110T000000Z
+DTSTART;TZID=America/Mexico_City:20270717T123000
+DTEND;TZID=America/Mexico_City:20270718T020000
+SUMMARY:Boda Alejandra & Josef
+LOCATION:Parroquia Nuestra Señora de Covadonga\, Paseo de las Palmas 406\, Lomas de Chapultepec\, CDMX
+DESCRIPTION:Llegada 12:30 p. m. · Misa 1:00 p. m. #AlejandraYJosef2027
+END:VEVENT
+END:VCALENDAR

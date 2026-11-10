@@ -1252,7 +1252,7 @@ h2{margin-top:-.22em}
 
 /* Separación compacta entre secciones */
 .wrap > section:not(.hero):not(.gallery){padding-top:clamp(52px,8vw,84px)!important;padding-bottom:clamp(52px,8vw,84px)!important}
-.wrap > section.familia.has-flor,.wrap > section#siti.has-flor,.wrap > section.gifts.has-flor{padding-bottom:clamp(160px,36vw,240px)!important}
+.wrap > section#siti.has-flor,.wrap > section.gifts.has-flor{padding-bottom:clamp(160px,36vw,240px)!important}
 .gallery{padding-top:clamp(52px,8vw,84px)!important;padding-bottom:20px!important}
 .wrap h2{margin-bottom:14px!important}
 
@@ -1331,6 +1331,67 @@ h2{margin-top:-.22em}
 .hs-close{font-style:italic}
 .hs-sign{font-family:var(--script);font-size:40px;color:#8C1149;margin:6px 0 0}
 .hs-tag{font-family:var(--display);font-weight:700;font-size:16px;letter-spacing:.08em;color:#C2410C}
+
+/* ===== Cambios del cliente (8 nov 2026) ===== */
+.pill-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 22px;border-radius:999px;background:#8C1149;color:#fff!important;font-family:var(--display);font-weight:700;font-size:16px;letter-spacing:.06em;text-decoration:none;border:1.5px solid #8C1149;margin:6px}
+.pill-btn--ghost{background:transparent;color:#8C1149!important}
+.pill-btn.is-disabled{background:#e9dccd;border-color:#e9dccd;color:#6b5a4a!important;cursor:default}
+.cal-btns{display:flex;flex-wrap:wrap;justify-content:center;margin:14px 0 22px}
+.loc-note{font-family:var(--display);font-weight:600;font-size:17px;line-height:1.6;color:#2C2C2C;margin:10px auto 14px;max-width:340px}
+.nav-lbl{font-family:var(--display);font-weight:700;font-size:14px;letter-spacing:.2em;text-transform:uppercase;color:#8C1149;margin:14px 0 6px}
+.nav-btns{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.loc-btn--ghost{background:transparent!important;color:#8C1149!important;border:1.5px solid #8C1149!important}
+.locs-grid{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))!important}
+.info-card{max-width:520px;margin:30px auto 0;padding:22px 20px;border-radius:22px;background:rgba(255,253,249,.95);border:1px solid rgba(201,162,39,.5);box-shadow:0 18px 40px -20px rgba(140,17,73,.3);text-align:center}
+.info-card p{font-family:var(--display);font-weight:600;font-size:17px;line-height:1.65;color:#2C2C2C;margin:0 0 10px}
+.info-h{font-family:var(--script);font-weight:400;font-size:clamp(30px,8vw,38px);color:#8C1149;margin:0 0 10px;line-height:1.3;padding:.08em .3em}
+.info-em{color:#B0175F!important;font-weight:700!important}
+.route{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:6px 8px;margin:6px 0 14px;font-family:var(--display);font-weight:700;font-size:15px;color:#8C1149}
+.route i{font-style:normal;color:#C2410C}
+.sec-intro{font-family:var(--display);font-weight:600;font-size:18px;line-height:1.7;color:#2C2C2C;max-width:520px;margin:0 auto 16px}
+.sec-small{font-family:var(--display);font-weight:600;font-size:15px;color:#5F5F5F;margin:6px auto 0}
+.hotel-card{text-align:center}
+.h-rate{font-family:var(--display);font-weight:600;font-size:17px;line-height:1.6;color:#2C2C2C;margin:10px 0 6px}
+.h-rate b{color:#8C1149}
+.h-note{font-family:var(--display);font-weight:600;font-size:15px;line-height:1.55;color:#5F5F5F;margin:0 0 14px}
+.hotel-name{font-size:clamp(22px,5.5vw,26px)!important}
+.hotel-loc{font-size:16px!important}
+.tip-list{list-style:none;padding:0;margin:10px auto 0;max-width:520px;text-align:left;display:grid;gap:10px}
+.tip-list li{font-family:var(--display);font-weight:600;font-size:17px;line-height:1.6;color:#2C2C2C;padding:12px 14px 12px 40px;background:rgba(255,253,249,.92);border:1px solid rgba(201,162,39,.4);border-radius:14px;position:relative}
+.tip-list li::before{content:"✦";position:absolute;left:14px;top:12px;color:#C2410C}
+.tips,.cdmx,.song,.contact,.after-wedding{text-align:center}
+.tips > .container,.cdmx > .container{position:relative;z-index:1}
+.day-scroller{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding:10px 4px 18px;margin:0 -16px;-webkit-overflow-scrolling:touch}
+.day-card{flex:0 0 min(82vw,320px);scroll-snap-align:center;background:#fffdf9;border:1px solid rgba(201,162,39,.45);border-radius:20px;overflow:hidden;text-align:left;box-shadow:0 14px 30px -18px rgba(140,17,73,.35)}
+.day-img{height:170px;overflow:hidden;background:#f4e8d6}
+.day-img img{width:100%;height:100%;object-fit:cover;display:block}
+.day-img--wed{display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#8C1149,#C2410C)}
+.day-img--wed span{font-family:var(--display);font-weight:700;font-size:72px;color:#fff}
+.day-body{padding:14px 16px 16px}
+.day-h{font-family:var(--display);font-weight:700;font-size:19px;color:#8C1149;margin:0 0 6px}
+.day-t{font-family:var(--display);font-weight:600;font-size:16px;line-height:1.55;color:#2C2C2C;margin:0 0 10px}
+.day-links{display:flex;flex-wrap:wrap;gap:6px}
+.day-links a{font-family:var(--display);font-weight:700;font-size:14px;color:#8C1149;border:1px solid rgba(140,17,73,.35);border-radius:999px;padding:5px 11px;text-decoration:none}
+.credit{font-size:13px!important}
+.rsvp-extra{max-width:420px;margin:6px auto 20px;text-align:left}
+.rq{margin:0 0 16px}
+.rq-l{font-family:var(--display);font-weight:700;font-size:17px;color:#2C2C2C;margin:0 0 8px;line-height:1.5}
+.rq-opts{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.rq-opts button{padding:12px;border-radius:12px;border:1.5px solid rgba(201,162,39,.5);background:#fffdf9;font-family:var(--display);font-weight:700;font-size:17px;color:#2C2C2C;cursor:pointer}
+.rq-opts button.on{background:#8C1149;border-color:#8C1149;color:#fff}
+.rsvp-extra .rsvp-input{width:100%;box-sizing:border-box}
+.rsvp-text b{color:#8C1149}
+.rsvp-deadline{font-size:15px!important;font-weight:700!important;color:#8C1149!important;letter-spacing:.06em!important}
+.countdown-sub{font-family:var(--display)!important;font-weight:600!important;font-style:italic;font-size:19px!important}
+/* idioma */
+#env-hint.ld-lang{position:static!important;transform:none!important;left:auto!important;right:auto!important;bottom:auto!important;top:auto!important;width:auto!important;padding:0!important;display:flex!important;flex-direction:row!important}
+.ld-lang{display:flex;align-items:center;gap:14px;margin-top:26px;opacity:0;animation:ldFade 1s 2.2s ease forwards}
+.ld-lang button{display:flex;align-items:center;gap:9px;padding:12px 18px;border-radius:999px;border:1px solid rgba(140,17,73,.35);background:rgba(255,253,249,.85);font-family:var(--display);font-weight:700;font-size:18px;letter-spacing:.06em;color:#8C1149;cursor:pointer}
+.ld-lang-sep{width:1px;height:26px;background:rgba(140,17,73,.3)}
+.ld-tap2{font-family:var(--display);font-weight:600;font-size:14px;letter-spacing:.1em;color:#5F5F5F;margin-top:14px;opacity:0;animation:ldFade 1s 2.6s ease forwards}
+.lang-toggle{position:fixed;top:max(14px,env(safe-area-inset-top));right:14px;z-index:60;display:flex;align-items:center;gap:8px;padding:8px 14px;border-radius:999px;border:1px solid rgba(140,17,73,.25);background:rgba(255,253,249,.9);font-family:var(--display);font-weight:700;font-size:15px;letter-spacing:.1em;color:#9a9a9a;cursor:pointer;box-shadow:0 6px 16px -10px rgba(140,17,73,.5)}
+.lang-toggle .on{color:#8C1149}
+.lang-toggle i{width:1px;height:14px;background:rgba(140,17,73,.3)}
 </style>
 </head>
 <body>
@@ -1368,7 +1429,8 @@ h2{margin-top:-.22em}
     <p class="ld-eyebrow">Nuestra boda</p>
     <h1 class="ld-names"><span class="ld-n1">Alejandra</span><em>&amp;</em><span class="ld-n2">Josef</span></h1>
     <p class="ld-date">17 · 07 · 2027</p>
-    <div id="env-hint" class="ld-tap"><span class="ld-tap-dot"></span><span>Toca para abrir</span></div>
+    <div id="env-hint" class="ld-lang"><button type="button" data-lang="es"><span class="ld-tap-dot"></span>Español</button><span class="ld-lang-sep"></span><button type="button" data-lang="en">English<span class="ld-tap-dot"></span></button></div>
+    <p class="ld-tap2">Toca para abrir · Tap to open</p>
   </div>
 </div>
 <div id="env-flash" aria-hidden="true"></div>
@@ -1424,24 +1486,33 @@ h2{margin-top:-.22em}
           <path d="M75 20 L95 20"/><path d="M105 20 L125 20"/>
         </g>
       </svg>
-      <p class="hero-invitation" data-anim="hero-invitation">Nos casamos</p>
-      <div class="hero-eyebrow" data-anim="hero-eyebrow">17 · Julio · 2027</div>
-      <p class="hero-wir-heiraten" data-anim="hero-wh">Acompáñanos a celebrar</p>
+      <p class="hero-invitation" data-anim="hero-invitation" data-en="We’re getting married">Nos casamos</p>
+      <div class="hero-eyebrow" data-anim="hero-eyebrow" data-en="July · 17 · 2027">17 · julio · 2027</div>
+      <p class="hero-wir-heiraten" data-anim="hero-wh" data-en="Join us to celebrate">Acompáñanos a celebrar</p>
       <h1 class="hero-name">
         <span class="hero-name-p" data-split="Alejandra"></span>
         <span class="hero-and">&amp;</span>
         <span class="hero-name-l" data-split="Josef"></span>
       </h1>
       <div class="hero-date" data-anim="hero-date">
-        <span>17</span><span class="sep">·</span><span>Julio</span><span class="sep">·</span><span>2027</span>
+        <span>17</span><span class="sep">·</span><span data-en="July">julio</span><span class="sep">·</span><span>2027</span>
       </div>
-      <div class="hero-place" data-anim="hero-place">Ciudad de México</div>
+      <div class="hero-place" data-anim="hero-place" data-en="Mexico City">Ciudad de México</div>
     </div>
     <div class="hero-scroll"></div>
   </section>
 
   <div class="seam" style="--from:transparent;--to:var(--paper);height:40px" aria-hidden="true"></div>
 
+
+  <!-- DESPUÉS DE LA BODA (se muestra solo después del 17 de julio de 2027) -->
+  <section class="section-paper after-wedding" id="after-wedding" hidden>
+    <div class="container">
+      <h2 data-en="Thank you for celebrating <em>with us</em>!">¡Gracias por celebrar <em>con nosotros</em>!</h2>
+      <p class="sec-intro" data-en="It was an unforgettable day, and you made it so. Here you can see the wedding photos and add yours to our shared album.">Fue un día inolvidable y lo fue gracias a ti. Aquí puedes ver las fotos de la boda y subir las tuyas al álbum compartido.</p>
+      <p class="hs-sign" data-en="With love, Alejandra &amp; Josef">Con cariño, Alejandra &amp; Josef</p>
+    </div>
+  </section>
   <!-- BIENVENIDA · CHIHUAHUA -->
   <section class="has-flor section-paper bienvenida">
     <div class="ftop" aria-hidden="true"><i class="ftop-back"></i><i class="ftop-front"></i></div>
@@ -1449,9 +1520,9 @@ h2{margin-top:-.22em}
     
     <div class="container">
       <div class="bienv-mono" aria-hidden="true">A<span>&amp;</span>J</div>
-      <div class="eyebrow">Bienvenidos</div>
-      <h2>Con mucha <em>alegría</em></h2>
-      <p class="bienv-text">Con la bendición de Dios y de nuestros padres, hemos decidido unir nuestras vidas.<br><br>Hoy celebramos el inicio de nuestro para siempre y nos llenaría de alegría compartir este momento tan especial contigo.</p>
+      <div class="eyebrow" data-en="Welcome">Bienvenidos</div>
+      <h2 data-en="With great <em>joy</em>">Con mucha <em>alegría</em></h2>
+      <p class="bienv-text" data-en="With the blessing of God and our parents, we have decided to unite our lives.<br><br>Today we celebrate the beginning of our forever, and it would fill us with joy to share this special moment with you.">Con la bendición de Dios y de nuestros padres, hemos decidido unir nuestras vidas.<br><br>Hoy celebramos el inicio de nuestro para siempre y nos llenaría de alegría compartir este momento tan especial contigo.</p>
     </div>
   </section>
 
@@ -1472,7 +1543,7 @@ h2{margin-top:-.22em}
           </g>
         </svg>
         <span class="verse-quote">&ldquo;</span>
-        <p class="verse-text">El amor no se trata de encontrar a la persona perfecta, sino de aprender a ver de forma perfecta a una persona imperfecta. Hoy elegimos caminar juntos, de la mano, para siempre.</p>
+        <p class="verse-text" data-en="Love is not about finding the perfect person, but learning to see an imperfect person perfectly. Today we choose to walk together, hand in hand, forever.">El amor no se trata de encontrar a la persona perfecta, sino de aprender a ver de forma perfecta a una persona imperfecta. Hoy elegimos caminar juntos, de la mano, para siempre.</p>
         <span class="verse-ref">Alejandra &amp; Josef</span>
       </div>
     </div>
@@ -1485,35 +1556,35 @@ h2{margin-top:-.22em}
     <div class="ink-bg" aria-hidden="true"><i style="background-image:url(ink/ink-corner.webp)"></i></div>
     <div class="container">
       <div class="eyebrow">Alejandra &amp; Josef</div>
-      <h2>Nuestra <em>historia</em></h2>
-      <p class="hs-text">Nuestra historia empezó antes de que naciéramos: nuestras mamás estaban embarazadas de nosotros al mismo tiempo. La vida después nos llevó por caminos distintos, hasta que a los 15 años volvimos a encontrarnos cuando Josef fue uno de los chambelanes en los XV años de Alejandra. Ese baile fue el comienzo de todo.</p>
-      <figure class="hs-photo hs-tilt-l"><img src="hist-mamas.webp" alt="Nuestras mamás embarazadas juntas" loading="lazy" decoding="async"><figcaption>Nuestras mamás, embarazadas juntas</figcaption></figure>
-      <p class="hs-text">Con el tiempo, la amistad se convirtió en amor, y hace siete años empezamos nuestro noviazgo. Desde entonces hemos aprendido que lo mejor de la vida se disfruta en equipo.</p>
+      <h2 data-en="Our <em>story</em>">Nuestra <em>historia</em></h2>
+      <p class="hs-text" data-en="Our story began before we were even born: our moms were pregnant with us at the same time. Life then took us down different paths, until we found each other again at 15, when Josef was one of the chambelanes at Alejandra’s quinceañera. That dance was the beginning of everything.">Nuestra historia empezó antes de que naciéramos: nuestras mamás estaban embarazadas de nosotros al mismo tiempo. La vida después nos llevó por caminos distintos, hasta que a los 15 años volvimos a encontrarnos cuando Josef fue uno de los chambelanes en los XV años de Alejandra. Ese baile fue el comienzo de todo.</p>
+      <figure class="hs-photo hs-tilt-l"><img src="hist-mamas.webp" alt="Nuestras mamás embarazadas juntas" loading="lazy" decoding="async"><figcaption data-en="Our moms, pregnant together">Nuestras mamás, embarazadas juntas</figcaption></figure>
+      <p class="hs-text" data-en="Over time, friendship turned into love, and seven years ago we started dating. Since then, we’ve learned that life’s best moments are the ones we share as a team.">Con el tiempo, la amistad se convirtió en amor, y hace siete años empezamos nuestro noviazgo. Desde entonces hemos aprendido que lo mejor de la vida se disfruta en equipo.</p>
 
       <div class="hs-17">
-        <h3 class="hs-h3">¿Por qué el 17?</h3>
+        <h3 class="hs-h3" data-en="Why the 17th?">¿Por qué el 17?</h3>
         <div class="hs-17-num"><span>1</span><i>+</i><span>7</span></div>
-        <p class="hs-text">Porque el 17 somos los dos. Alejandra nació el 1 de marzo y Josef el 7 de mayo. Juntos formamos el 17, y por eso elegimos el 17 de julio de 2027 para unir nuestras vidas para siempre.</p>
+        <p class="hs-text" data-en="Because 17 is the two of us. Alejandra was born on March 1 and Josef on May 7. Together we make 17, which is why we chose July 17, 2027 to join our lives forever.">Porque el 17 somos los dos. Alejandra nació el 1 de marzo y Josef el 7 de mayo. Juntos formamos el 17, y por eso elegimos el 17 de julio de 2027 para unir nuestras vidas para siempre.</p>
       </div>
 
-      <h3 class="hs-h3">Lo que nos hace “nosotros”</h3>
+      <h3 class="hs-h3" data-en="What makes us “us”">Lo que nos hace “nosotros”</h3>
       <div class="hs-list">
-        <div class="hs-item"><b>Nuestra familia de cuatro patas</b><span>Amamos a los animales, sobre todo a los perros. Nuestra consentida es Atenea, una dálmata que ha estado con nosotros en esta aventura.</span></div>
-        <div class="hs-item"><b>El deporte</b><span>Josef es fanático del fútbol soccer, y Alejandra jugó lacrosse durante varios años. En casa siempre hay un partido que ver.</span></div>
-        <div class="hs-item"><b>La comida</b><span>Nada como unos buenos tacos al pastor o una birria para celebrar.</span></div>
-        <div class="hs-item"><b>La playa y la naturaleza</b><span>Nos encanta el mar, caminar al aire libre y desconectarnos del mundo.</span></div>
-        <div class="hs-item"><b>Piratas del Caribe</b><span>Somos fans de la saga, y nuestra vida juntos también ha sido una gran aventura.</span></div>
-        <div class="hs-item"><b>La música</b><span>De Bad Bunny al rock de los 80, nuestra lista de canciones tiene de todo.</span></div>
-        <div class="hs-item"><b>Los libros</b><span>Compartimos el gusto por la lectura.</span></div>
+        <div class="hs-item" data-en="<b>Our four-legged family</b><span>We love animals, especially dogs. Our pride and joy is Atenea, a Dalmatian who has been with us on this adventure.</span>"><b>Nuestra familia de cuatro patas</b><span>Amamos a los animales, sobre todo a los perros. Nuestra consentida es Atenea, una dálmata que ha estado con nosotros en esta aventura.</span></div>
+        <div class="hs-item" data-en="<b>Sports</b><span>Josef is a huge soccer fan, and Alejandra played lacrosse for several years. There’s always a game on at our place.</span>"><b>El deporte</b><span>Josef es fanático del fútbol soccer, y Alejandra jugó lacrosse durante varios años. En casa siempre hay un partido que ver.</span></div>
+        <div class="hs-item" data-en="<b>Food</b><span>Nothing beats tacos al pastor or a good birria to celebrate.</span>"><b>La comida</b><span>Nada como unos buenos tacos al pastor o una birria para celebrar.</span></div>
+        <div class="hs-item" data-en="<b>The beach and the outdoors</b><span>We love the ocean, long walks, and time away from it all in nature.</span>"><b>La playa y la naturaleza</b><span>Nos encanta el mar, caminar al aire libre y desconectarnos del mundo.</span></div>
+        <div class="hs-item" data-en="<b>Pirates of the Caribbean</b><span>We’re fans of the movies, and our life together has been quite an adventure too.</span>"><b>Piratas del Caribe</b><span>Somos fans de la saga, y nuestra vida juntos también ha sido una gran aventura.</span></div>
+        <div class="hs-item" data-en="<b>Music</b><span>From Bad Bunny to ’80s rock, our playlist has a little of everything.</span>"><b>La música</b><span>De Bad Bunny al rock de los 80, nuestra lista de canciones tiene de todo.</span></div>
+        <div class="hs-item" data-en="<b>Books</b><span>We both love to read.</span>"><b>Los libros</b><span>Compartimos el gusto por la lectura.</span></div>
       </div>
-      <figure class="hs-photo hs-tilt-r"><img src="hist-atenea.webp" alt="Alejandra y Josef con Atenea" loading="lazy" decoding="async"><figcaption>Con Atenea</figcaption></figure>
+      <figure class="hs-photo hs-tilt-r"><img src="hist-atenea.webp" alt="Alejandra y Josef con Atenea" loading="lazy" decoding="async"><figcaption data-en="With Atenea">Con Atenea</figcaption></figure>
 
-      <h3 class="hs-h3">La propuesta</h3>
-      <p class="hs-text">En Savannah, Georgia, en la plaza principal del centro histórico, Josef se arrodilló frente a Alejandra y le hizo la gran pregunta. Ella, con el corazón a mil, dijo que sí.</p>
+      <h3 class="hs-h3" data-en="The Proposal">La propuesta</h3>
+      <p class="hs-text" data-en="In Savannah, Georgia, in the main square of the historic district, Josef got down on one knee and asked Alejandra the big question. With her heart racing, she said yes.">En Savannah, Georgia, en la plaza principal del centro histórico, Josef se arrodilló frente a Alejandra y le hizo la gran pregunta. Ella, con el corazón a mil, dijo que sí.</p>
 
-      <h3 class="hs-h3">Una nueva etapa</h3>
-      <p class="hs-text">Alejandra estudió Finanzas, y Josef sirve con orgullo en la Fuerza Espacial de los Estados Unidos. Después de la boda comenzaremos nuestra vida de casados en Colorado Springs, con Atenea, muchas ganas y un mapa lleno de nuevas aventuras.</p>
-      <p class="hs-text hs-close">Gracias por ser parte de nuestra historia. Nos encantará celebrar contigo el inicio de este nuevo capítulo.</p>
+      <h3 class="hs-h3" data-en="A New Chapter">Una nueva etapa</h3>
+      <p class="hs-text" data-en="Alejandra studied Finance, and Josef proudly serves in the United States Space Force. After the wedding, we’ll begin our married life in Colorado Springs, with Atenea, plenty of excitement, and a map full of new adventures.">Alejandra estudió Finanzas, y Josef sirve con orgullo en la Fuerza Espacial de los Estados Unidos. Después de la boda comenzaremos nuestra vida de casados en Colorado Springs, con Atenea, muchas ganas y un mapa lleno de nuevas aventuras.</p>
+      <p class="hs-text hs-close" data-en="Thank you for being part of our story. We can’t wait to celebrate the start of this new chapter with you.">Gracias por ser parte de nuestra historia. Nos encantará celebrar contigo el inicio de este nuevo capítulo.</p>
       <p class="hs-sign">Alejandra &amp; Josef</p>
       <p class="hs-tag">#AlejandraYJosef2027</p>
     </div>
@@ -1522,9 +1593,13 @@ h2{margin-top:-.22em}
   <!-- FECHA + FOTO EN ÓVALO -->
   <section class="section-paper date-statement" style="text-align:center">
     <div class="container">
-      <div class="eyebrow">Reserva la fecha</div>
-      <h2>Nuestro <em>gran</em> día</h2>
-      <div class="date-full">Sábado · 17 de Julio de 2027</div>
+      <div class="eyebrow" data-en="Save the date">Reserva la fecha</div>
+      <h2 data-en="Our <em>big</em> day">Nuestro <em>gran</em> día</h2>
+      <div class="date-full" data-en="Saturday · July 17, 2027">Sábado · 17 de julio de 2027</div>
+      <div class="cal-btns">
+        <a class="pill-btn" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Boda%20Alejandra%20%26%20Josef&amp;dates=20270717T123000/20270718T020000&amp;ctz=America/Mexico_City&amp;location=Parroquia%20Nuestra%20Se%C3%B1ora%20de%20Covadonga%2C%20Paseo%20de%20las%20Palmas%20406%2C%20Lomas%20de%20Chapultepec&amp;details=%23AlejandraYJosef2027" target="_blank" rel="noopener"><span data-en="Add to my calendar">Agregar a mi calendario</span></a>
+        <a class="pill-btn pill-btn--ghost" href="boda-alejandra-y-josef.ics" download><span data-en="Apple / Outlook (.ics)">Apple / Outlook (.ics)</span></a>
+      </div>
       <div class="soft-photo"><img src="foto1.webp" alt="Alejandra y Josef" loading="lazy" decoding="async"></div>
     </div>
   </section>
@@ -1534,18 +1609,17 @@ h2{margin-top:-.22em}
   <!-- FAMILIA -->
   <section class="has-flor section-surface familia">
     <div class="ink-bg ink-flip" aria-hidden="true"><i style="background-image:url(ink/ink-corner.webp)"></i></div>
-    <div class="fband" aria-hidden="true"><i style="background-image:url(floral/bg-footer.webp)"></i></div>
     <span class="mono-wm" aria-hidden="true">A &amp; J</span>
     <div class="container">
-      <div class="eyebrow">Con la bendición de</div>
-      <h2>Nuestros <em>padres</em></h2>
+      <div class="eyebrow" data-en="With the blessing of">Con la bendición de</div>
+      <h2 data-en="Our <em>parents</em>">Nuestros <em>padres</em></h2>
       <div class="familia-grid">
         <div class="familia-card" data-tilt>
-          <div class="familia-role">Padres de la novia</div>
+          <div class="familia-role" data-en="Parents of the bride">Padres de la novia</div>
           <div class="familia-names">Denisse Romero<br>&amp; Alejandro Torres</div>
         </div>
         <div class="familia-card" data-tilt>
-          <div class="familia-role">Padres del novio</div>
+          <div class="familia-role" data-en="Parents of the groom">Padres del novio</div>
           <div class="familia-names">Jennifer Sommerer<br>&amp; Guillermo Gómez</div>
         </div>
       </div>
@@ -1558,19 +1632,20 @@ h2{margin-top:-.22em}
   <section class="section-paper padrinos">
     
     <div class="container">
-      <div class="eyebrow">Nos acompañan</div>
-      <h2>Nuestros <em>padrinos</em></h2>
+      <div class="eyebrow" data-en="Standing with us">Nos acompañan</div>
+      <h2 data-en="Our <em>sponsors</em>">Nuestros <em>padrinos</em></h2>
       <div class="pd-carousel">
         <button class="pd-arrow prev" aria-label="Anterior"><svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg></button>
         <button class="pd-arrow next" aria-label="Siguiente"><svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></button>
         <div class="pd-viewport"><div class="pd-track" id="pdTrack">
-          <div class="pd-slide"><div class="pd-icon"><svg viewBox="0 0 64 64"><rect x="22" y="28" width="8" height="24" rx="1.5"/><rect x="34" y="28" width="8" height="24" rx="1.5"/><line x1="26" y1="28" x2="26" y2="22"/><line x1="38" y1="28" x2="38" y2="22"/><path d="M26 22c-2.2-2.2-2.2-4.5 0-6.8 2.2 2.3 2.2 4.6 0 6.8Z"/><path d="M38 22c-2.2-2.2-2.2-4.5 0-6.8 2.2 2.3 2.2 4.6 0 6.8Z"/><line x1="17" y1="52" x2="47" y2="52"/></svg></div><div class="pd-rol">Velación</div><p class="pd-names">Elvira González<br>y Sergio Torres</p></div>
-          <div class="pd-slide"><div class="pd-icon"><svg viewBox="0 0 64 64"><circle cx="25" cy="29" r="12"/><circle cx="39" cy="38" r="12"/><line x1="25" y1="25" x2="25" y2="33"/><line x1="21" y1="29" x2="29" y2="29"/></svg></div><div class="pd-rol">Arras</div><p class="pd-names">Antonieta Arvizu<br>y Manuel Palma</p></div>
-          <div class="pd-slide"><div class="pd-icon"><svg viewBox="0 0 64 64"><path d="M44 24c-6.6 0-10 8-12 8s-5.4-8-12-8a8 8 0 000 16c6.6 0 10-8 12-8s5.4 8 12 8a8 8 0 000-16Z"/></svg></div><div class="pd-rol">Lazo</div><p class="pd-names">Dally Murcia<br>y Rodolfo Calvo</p></div>
-          <div class="pd-slide"><div class="pd-icon"><svg viewBox="0 0 64 64"><path d="M32 56 L26 38M32 56 L38 38M32 56 L32 36"/><circle cx="26" cy="30" r="6.5"/><circle cx="38" cy="30" r="6.5"/><circle cx="32" cy="22" r="6.5"/><path d="M23 52 Q32 47 41 52"/></svg></div><div class="pd-rol">Damas de honor</div><p class="pd-names">Alejandra Torres Castillo<br>Renata Palma Arvizu<br>Sara Sehhizadeh<br>Sofía Gómez</p></div>
-          <div class="pd-slide"><div class="pd-icon"><svg viewBox="0 0 64 64"><path d="M32 30 L16 21 L16 39 Z"/><path d="M32 30 L48 21 L48 39 Z"/><rect x="28.5" y="26.5" width="7" height="7" rx="1.5"/></svg></div><div class="pd-rol">Best Men</div><p class="pd-names">Alex Gómez<br>Tylor Sommerer<br>Cassie</p></div>
+          <div class="pd-slide"><div class="pd-icon"><svg viewBox="0 0 64 64"><rect x="22" y="28" width="8" height="24" rx="1.5"/><rect x="34" y="28" width="8" height="24" rx="1.5"/><line x1="26" y1="28" x2="26" y2="22"/><line x1="38" y1="28" x2="38" y2="22"/><path d="M26 22c-2.2-2.2-2.2-4.5 0-6.8 2.2 2.3 2.2 4.6 0 6.8Z"/><path d="M38 22c-2.2-2.2-2.2-4.5 0-6.8 2.2 2.3 2.2 4.6 0 6.8Z"/><line x1="17" y1="52" x2="47" y2="52"/></svg></div><div class="pd-rol" data-en="Candles">Velación</div><p class="pd-names">Elvira González<br>y Sergio Torres</p></div>
+          <div class="pd-slide"><div class="pd-icon"><svg viewBox="0 0 64 64"><circle cx="25" cy="29" r="12"/><circle cx="39" cy="38" r="12"/><line x1="25" y1="25" x2="25" y2="33"/><line x1="21" y1="29" x2="29" y2="29"/></svg></div><div class="pd-rol" data-en="Coins (Arras)">Arras</div><p class="pd-names">Antonieta Arvizu<br>y Manuel Palma</p></div>
+          <div class="pd-slide"><div class="pd-icon"><svg viewBox="0 0 64 64"><circle cx="26" cy="34" r="13"/><circle cx="40" cy="34" r="13"/></svg></div><div class="pd-rol" data-en="Rings">Anillos</div><p class="pd-names" data-en="To be confirmed">Por confirmar</p></div>
+          <div class="pd-slide"><div class="pd-icon"><svg viewBox="0 0 64 64"><path d="M44 24c-6.6 0-10 8-12 8s-5.4-8-12-8a8 8 0 000 16c6.6 0 10-8 12-8s5.4 8 12 8a8 8 0 000-16Z"/></svg></div><div class="pd-rol" data-en="Lasso (Lazo)">Lazo</div><p class="pd-names">Dally Murcia<br>y Rodolfo Calvo</p></div>
+          <div class="pd-slide"><div class="pd-icon"><svg viewBox="0 0 64 64"><path d="M32 56 L26 38M32 56 L38 38M32 56 L32 36"/><circle cx="26" cy="30" r="6.5"/><circle cx="38" cy="30" r="6.5"/><circle cx="32" cy="22" r="6.5"/><path d="M23 52 Q32 47 41 52"/></svg></div><div class="pd-rol" data-en="Bridesmaids">Damas de honor</div><p class="pd-names">Alejandra Torres Castillo<br>Renata Palma Arvizu<br>Sara Sehhizadeh<br>Sofía Gómez</p></div>
+          <div class="pd-slide"><div class="pd-icon"><svg viewBox="0 0 64 64"><path d="M32 30 L16 21 L16 39 Z"/><path d="M32 30 L48 21 L48 39 Z"/><rect x="28.5" y="26.5" width="7" height="7" rx="1.5"/></svg></div><div class="pd-rol">Best Man</div><p class="pd-names">Casey Hampson</p></div>
         </div></div>
-        <div class="pd-dots" id="pdDots"><button class="active" aria-label="Padrino 1"></button><button aria-label="Padrino 2"></button><button aria-label="Padrino 3"></button><button aria-label="Padrino 4"></button><button aria-label="Padrino 5"></button></div>
+        <div class="pd-dots" id="pdDots"><button class="active" aria-label="Padrino 1"></button><button aria-label="Padrino 2"></button><button aria-label="Padrino 3"></button><button aria-label="Padrino 4"></button><button aria-label="Padrino 5"></button><button aria-label="Padrino 6"></button></div>
             </div>
     </div>
   </section>
@@ -1583,31 +1658,39 @@ h2{margin-top:-.22em}
     
     <div class="container">
       <div style="text-align:center">
-        <div class="eyebrow">Acompáñanos</div>
-        <h2>Ceremonia <em>&amp;</em> Recepción</h2>
-        <div class="locs-sub">Ciudad de México</div>
+        <div class="eyebrow" data-en="Join us">Acompáñanos</div>
+        <h2 data-en="Ceremony <em>&amp;</em> Reception">Ceremonia <em>&amp;</em> Recepción</h2>
+        <div class="locs-sub" data-en="Mexico City">Ciudad de México</div>
       </div>
       <div class="locs-grid">
 
         <article class="loc-card" data-tilt>
           <div class="soft-img"><img src="iglesia.webp" alt="Iglesia de Nuestra Señora de Covadonga" loading="lazy"></div>
-          <div class="loc-type">Ceremonia Religiosa</div>
-          <div class="loc-name">Iglesia de Nuestra Señora de Covadonga</div>
-          <div class="loc-time">12:30 p.m.</div>
+          <div class="loc-type" data-en="Religious Ceremony">Ceremonia religiosa</div>
+          <div class="loc-name" data-en="Our Lady of Covadonga Church">Parroquia de Nuestra Señora de Covadonga</div>
+          <div class="loc-time">12:30 p. m.</div>
+          <p class="loc-note" data-en="Please arrive by 12:30 p.m.; Mass will begin promptly at 1:00 p.m.<br>Dress code: formal.">Te pedimos llegar a las 12:30 p. m.; la misa comenzará a la 1:00 p. m. en punto.<br>Vestimenta: formal.</p>
           <div class="loc-addr">Av. Paseo de las Palmas 406<br>Lomas de Chapultepec, Miguel Hidalgo · CDMX</div>
-          <a class="loc-btn" href="https://maps.app.goo.gl/tTUaQo9itjAahQRi8" target="_blank" rel="noopener">Cómo llegar</a>
+          <p class="nav-lbl" data-en="Get directions">Cómo llegar</p><div class="nav-btns"><a class="loc-btn" href="https://www.google.com/maps/search/?api=1&amp;query=Parroquia%20Nuestra%20Se%C3%B1ora%20de%20Covadonga%20Paseo%20de%20las%20Palmas%20406%20Lomas%20de%20Chapultepec" target="_blank" rel="noopener">Google Maps</a><a class="loc-btn loc-btn--ghost" href="https://waze.com/ul?q=Parroquia%20Nuestra%20Senora%20de%20Covadonga%20Paseo%20de%20las%20Palmas%20406&amp;navigate=yes" target="_blank" rel="noopener">Waze</a></div>
         </article>
 
         <article class="loc-card" data-tilt>
           <div class="soft-img"><img src="salon.webp" alt="Finca La Gloria" loading="lazy"></div>
-          <div class="loc-type">Recepción</div>
+          <div class="loc-type" data-en="Reception">Recepción</div>
           <div class="loc-name">Finca La Gloria</div>
           <div class="loc-schedule">
-            <div class="loc-sch-row"><span class="loc-sch-time">4:00 p.m.</span><span class="loc-sch-ev">Cóctel</span></div>
-            <div class="loc-sch-row"><span class="loc-sch-time">5:00 p.m.</span><span class="loc-sch-ev">Recepción</span></div>
+            <div class="loc-sch-row"><span class="loc-sch-time">4:00 p. m.</span><span class="loc-sch-ev" data-en="Cocktail hour">Cóctel</span></div>
+            <div class="loc-sch-row"><span class="loc-sch-time">5:00 p. m.</span><span class="loc-sch-ev" data-en="Reception">Recepción</span></div>
           </div>
           <div class="loc-addr">Av. México 5665, La Noria<br>Xochimilco · CDMX</div>
-          <a class="loc-btn" href="https://maps.app.goo.gl/cm4sjGqUXtBjKU1b8" target="_blank" rel="noopener">Cómo llegar</a>
+          <p class="nav-lbl" data-en="Get directions">Cómo llegar</p><div class="nav-btns"><a class="loc-btn" href="https://www.google.com/maps/search/?api=1&amp;query=Finca%20La%20Gloria%20Av.%20M%C3%A9xico%205665%20La%20Noria%20Xochimilco" target="_blank" rel="noopener">Google Maps</a><a class="loc-btn loc-btn--ghost" href="https://waze.com/ul?q=Finca%20La%20Gloria%20Av.%20Mexico%205665%20Xochimilco&amp;navigate=yes" target="_blank" rel="noopener">Waze</a></div>
+        </article>
+        <article class="loc-card loc-card--torna" data-tilt>
+          <div class="loc-type" data-en="After-party">Tornafiesta</div>
+          <div class="loc-name">Xochimilco</div>
+          <div class="loc-time">11:30 p. m.</div>
+          <p class="loc-note" data-en="After the reception, the party continues in Xochimilco. Please let us know in your RSVP if you will join us, so we can plan transportation and seating.<br>Suggested attire: jeans and sneakers.">Después de la recepción, la fiesta continúa en Xochimilco. Por favor confírmanos en tu RSVP si nos acompañarás, para organizar el transporte y los lugares.<br>Sugerencia: jeans y tenis.</p>
+          <div class="loc-addr" data-en="Address to be confirmed">Dirección por confirmar</div>
         </article>
 
       </div>
@@ -1619,14 +1702,14 @@ h2{margin-top:-.22em}
   <!-- COUNTDOWN -->
   <section class="section-bg countdown">
     <div class="container">
-      <div class="eyebrow">Cuenta regresiva</div>
-      <h2>Faltan <em>muy</em> poco</h2>
-      <div class="countdown-sub">Para celebrar juntos este día tan especial</div>
+      <div class="eyebrow" data-en="Countdown">Cuenta regresiva</div>
+      <h2 data-en="Almost <em>there</em>">Faltan <em>muy</em> poco</h2>
+      <div class="countdown-sub" data-en="Until we celebrate this special day together">Para celebrar juntos este día tan especial</div>
       <div class="countdown-grid" id="cd">
-        <div class="cd-block"><div class="cd-num" id="cd-d">000</div><div class="cd-lbl">Días</div></div>
-        <div class="cd-block"><div class="cd-num" id="cd-h">00</div><div class="cd-lbl">Horas</div></div>
-        <div class="cd-block"><div class="cd-num" id="cd-m">00</div><div class="cd-lbl">Minutos</div></div>
-        <div class="cd-block"><div class="cd-num" id="cd-s">00</div><div class="cd-lbl">Segundos</div></div>
+        <div class="cd-block"><div class="cd-num" id="cd-d">000</div><div class="cd-lbl" data-en="Days">Días</div></div>
+        <div class="cd-block"><div class="cd-num" id="cd-h">00</div><div class="cd-lbl" data-en="Hours">Horas</div></div>
+        <div class="cd-block"><div class="cd-num" id="cd-m">00</div><div class="cd-lbl" data-en="Minutes">Minutos</div></div>
+        <div class="cd-block"><div class="cd-num" id="cd-s">00</div><div class="cd-lbl" data-en="Seconds">Segundos</div></div>
       </div>
     </div>
   </section>
@@ -1639,9 +1722,9 @@ h2{margin-top:-.22em}
     <div class="itv3-orb" style="width:300px;height:300px;top:5%;left:-80px;background:radial-gradient(circle,rgba(201,160,68,.07),transparent 70%);"></div>
     <div class="itv3-orb" style="width:240px;height:240px;bottom:8%;right:-60px;background:radial-gradient(circle,rgba(217,144,10,.08),transparent 70%);"></div>
     <div class="container">
-      <div class="eyebrow">Programa</div>
-      <h2>El <em>orden</em> del día</h2>
-      <span class="itinerary-sub">Sábado, 17 de Julio · 2027</span>
+      <div class="eyebrow" data-en="Schedule">Programa</div>
+      <h2 data-en="The <em>order</em> of the day">El <em>orden</em> del día</h2>
+      <span class="itinerary-sub" data-en="Saturday, July 17, 2027">Sábado, 17 de julio de 2027</span>
 
       <div class="itin-wrap">
         <div class="itin-line" aria-hidden="true"></div>
@@ -1649,9 +1732,9 @@ h2{margin-top:-.22em}
         <!-- 1 izq: Ceremonia Religiosa -->
         <div class="itin-item rv">
           <div class="itin-text itin-text--left">
-            <span class="itin-time">12:30 p.m.</span>
-            <div class="itin-ev">Ceremonia Religiosa</div>
-            <div class="itin-sub">Nuestra Señora de Covadonga</div>
+            <span class="itin-time">12:30 p. m.</span>
+            <div class="itin-ev" data-en="Religious Ceremony">Ceremonia religiosa</div>
+            <div class="itin-sub" data-en="Arrival 12:30 · Mass at 1:00 p.m.">Llegada 12:30 · Misa 1:00 p. m.</div>
           </div>
           <div class="itin-icon-wrap">
             <img class="itin-ic" src="ic-church.webp" alt="" aria-hidden="true" loading="lazy" decoding="async">
@@ -1664,8 +1747,8 @@ h2{margin-top:-.22em}
             <img class="itin-ic" src="ic-cocktail.webp" alt="" aria-hidden="true" loading="lazy" decoding="async">
           </div>
           <div class="itin-text itin-text--right">
-            <span class="itin-time">4:00 p.m.</span>
-            <div class="itin-ev">Cóctel</div>
+            <span class="itin-time">4:00 p. m.</span>
+            <div class="itin-ev" data-en="Cocktail hour">Cóctel</div>
             <div class="itin-sub">Finca La Gloria</div>
           </div>
         </div>
@@ -1673,9 +1756,9 @@ h2{margin-top:-.22em}
         <!-- 3 izq: Cóctel y fotografías -->
         <div class="itin-item rv">
           <div class="itin-text itin-text--left">
-            <span class="itin-time">5:00 p.m.</span>
-            <div class="itin-ev">Recepción</div>
-            <div class="itin-sub">Jardín Finca La Gloria</div>
+            <span class="itin-time">5:00 p. m.</span>
+            <div class="itin-ev" data-en="Reception">Recepción</div>
+            <div class="itin-sub" data-en="Finca La Gloria garden">Jardín Finca La Gloria</div>
           </div>
           <div class="itin-icon-wrap">
             <img class="itin-ic" src="ic-plate.webp" alt="" aria-hidden="true" loading="lazy" decoding="async">
@@ -1688,15 +1771,21 @@ h2{margin-top:-.22em}
             <img class="itin-ic" src="ic-rings.webp" alt="" aria-hidden="true" loading="lazy" decoding="async">
           </div>
           <div class="itin-text itin-text--right">
-            <span class="itin-time">11:30 p.m.</span>
-            <div class="itin-ev">Tornafiesta</div>
+            <span class="itin-time">11:30 p. m.</span>
+            <div class="itin-ev" data-en="After-party">Tornafiesta</div>
             <div class="itin-sub">Xochimilco</div>
           </div>
         </div>
 
       </div><!-- /.itin-wrap -->
 
-      <!-- TRANSPORTE: omitido (el cliente no dio datos) -->
+      <div class="info-card transp">
+        <h3 class="info-h" data-en="Guest transportation">Transporte para invitados</h3>
+        <p data-en="We will provide guest transportation on the wedding day:">Tendremos transporte para invitados el día de la boda:</p>
+        <div class="route"><span data-en="Pick-up point">Punto de salida</span><i>→</i><span data-en="Covadonga Church">Iglesia de la Covadonga</span><i>→</i><span>Finca La Gloria</span><i>→</i><span data-en="After-party in Xochimilco">Tornafiesta en Xochimilco</span><i>→</i><span data-en="Return to the pick-up points">Regreso a los puntos de salida</span></div>
+        <p data-en="<b>Pick-up and drop-off points:</b> one in Polanco and one on Reforma (to be confirmed).<br><b>Departure time:</b> to be confirmed."><b>Puntos de salida y regreso:</b> uno en Polanco y uno en Reforma (por confirmar).<br><b>Horario de salida:</b> por confirmar.</p>
+        <p class="info-em" data-en="Please let us know in your RSVP if you will use the shuttle.">Indica en tu RSVP si usarás el transporte.</p>
+      </div>
     </div>
   </section>
 
@@ -1706,50 +1795,110 @@ h2{margin-top:-.22em}
   <section class="section-surface hospedaje">
     <div class="ftop" aria-hidden="true"><i class="ftop-back"></i><i class="ftop-front"></i></div>
     <div class="container">
-      <div class="eyebrow">¿Dónde quedarte?</div>
-      <h2>Hospedaje <em>recomendado</em></h2>
+      <div class="eyebrow" data-en="Where to stay">¿Dónde quedarte?</div>
+      <h2 data-en="Recommended <em>hotels</em>">Hospedaje <em>recomendado</em></h2>
+      <p class="sec-intro" data-en="We recommend staying in Polanco or along Reforma, close to the church and the shuttle pick-up points. We arranged group rates at three hotels for different budgets. We suggest booking early, as July is a busy season.">Te recomendamos hospedarte en Polanco o en la zona de Reforma, cerca de la iglesia y de los puntos de salida del transporte. Negociamos tarifas de grupo en tres hoteles para distintos presupuestos. Te sugerimos reservar con tiempo: julio es temporada alta.</p>
+      <p class="sec-small" data-en="Group rates for the Torres–Gómez Wedding · USD, taxes included unless noted.">Tarifas de grupo para la Boda Torres–Gómez · USD con impuestos incluidos, salvo que se indique.</p>
       <div class="hotel-grid">
-
         <div class="hotel-card">
-          <div class="hotel-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 18v-6a2 2 0 012-2h14a2 2 0 012 2v6"/><path d="M3 18h18"/><path d="M3 14h18"/><path d="M7 10V8a1 1 0 011-1h3a1 1 0 011 1v2"/></svg></div>
-          <div class="hotel-name">Por confirmar</div>
-          <div class="hotel-loc">Ciudad de México</div>
+          <div class="hotel-name">Presidente InterContinental Mexico City</div>
+          <div class="hotel-loc">Campos Elíseos 218, Polanco</div>
+          <p class="h-rate" data-en="Mon–Thu <b>$297.56</b> / night · Fri–Sun <b>$309.51</b> / night<br>7 nights ≈ $2,118.77 · 3 nights ≈ $916.58">Lun–jue <b>$297.56</b> / noche · Vie–dom <b>$309.51</b> / noche<br>7 noches ≈ $2,118.77 · 3 noches ≈ $916.58</p>
+          <p class="h-note" data-en="Group rate valid until June 24, 2027; same rate 3 days before and after. Breakfast +$20 USD per person per day. Booking link: coming soon.">Tarifa de grupo vigente hasta el 24 de junio de 2027; misma tarifa 3 días antes y después. Desayuno +$20 USD por persona por día. Liga de reserva: en proceso.</p>
+          <div class="hotel-btns"><a class="hotel-btn hotel-btn--ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Presidente%20InterContinental%20Mexico%20City%20Campos%20Eliseos%20218" target="_blank" rel="noopener"><span data-en="View location">Ver ubicación</span></a></div>
         </div>
-
+        <div class="hotel-card">
+          <div class="hotel-name">JW Marriott Mexico City Polanco</div>
+          <div class="hotel-loc">Andrés Bello 29, Polanco</div>
+          <p class="h-rate" data-en="<b>$339.38</b> / night ($284 + taxes)<br>3 nights (Jul 15–18) $1,018.14"><b>$339.38</b> / noche ($284 + impuestos)<br>3 noches (15–18 jul) $1,018.14</p>
+          <p class="h-note" data-en="Group rate for July 15–18. Breakfast not included. Booking link: once the contract is finalized (in progress).">Tarifa de grupo para el 15–18 de julio. Desayuno no incluido. Liga de reserva: al concluir el contrato (en proceso).</p>
+          <div class="hotel-btns"><a class="hotel-btn hotel-btn--ghost" href="https://www.google.com/maps/search/?api=1&amp;query=JW%20Marriott%20Mexico%20City%20Polanco%20Andres%20Bello%2029" target="_blank" rel="noopener"><span data-en="View location">Ver ubicación</span></a></div>
+        </div>
+        <div class="hotel-card">
+          <div class="hotel-name">Sheraton Mexico City Maria Isabel</div>
+          <div class="hotel-loc">Paseo de la Reforma 325, Cuauhtémoc</div>
+          <p class="h-rate" data-en="Classic double room <b>$213.91</b> / night<br>7 nights $1,497.34 · 3 nights $641.72">Habitación Classic doble <b>$213.91</b> / noche<br>7 noches $1,497.34 · 3 noches $641.72</p>
+          <p class="h-note" data-en="Open group code: <b>M-X1GHC2B</b>. Club room with breakfast included: $268.88 / night.">Código abierto de grupo: <b>M-X1GHC2B</b>. Habitación Club con desayuno incluido: $268.88 / noche.</p>
+          <div class="hotel-btns"><a class="hotel-btn hotel-btn--ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Sheraton%20Mexico%20City%20Maria%20Isabel%20Reforma%20325" target="_blank" rel="noopener"><span data-en="View location">Ver ubicación</span></a></div>
+        </div>
       </div>
     </div>
   </section>
 
   <div class="seam" style="--from:var(--surface);--to:var(--bg)" aria-hidden="true"></div>
 
+
+  <!-- TIPS + SI VIAJAS DESDE EE.UU. -->
+  <section class="section-paper tips">
+    <div class="ink-bg ink-flip" aria-hidden="true"><i style="background-image:url(ink/ink-hero.webp)"></i></div>
+    <div class="container">
+      <div class="eyebrow" data-en="Before you travel">Antes de viajar</div>
+      <h2 data-en="Travel <em>tips</em>">Tips para tu <em>viaje</em></h2>
+      <ul class="tip-list">
+        <li data-en="July is rainy season: it usually rains in the afternoon. Bring an umbrella or rain jacket.">Julio es temporada de lluvias: casi siempre llueve por la tarde. Trae paraguas o impermeable.</li>
+        <li data-en="Mexico City sits at 7,350 ft (2,240 m). Drink plenty of water your first days.">La ciudad está a 2,240 m de altura. Toma mucha agua los primeros días.</li>
+        <li data-en="Comfortable walking shoes, plus a pair for dancing.">Zapatos cómodos para caminar, y unos extra para bailar.</li>
+        <li data-en="Getting around: use Uber, DiDi or your hotel’s taxi service.">Transporte: usa Uber, DiDi o los taxis del hotel.</li>
+        <li data-en="Most places take cards, but carry some pesos for markets, tips and street food.">Casi todo acepta tarjeta, pero lleva pesos en efectivo para mercados, propinas y antojitos.</li>
+        <li data-en="For Teotihuacán: hat, sunscreen and water.">Para Teotihuacán: gorra, bloqueador y agua.</li>
+      </ul>
+      <div class="info-card usa">
+        <h3 class="info-h" data-en="If you are traveling from the U.S.">Si viajas desde Estados Unidos</h3>
+        <p data-en="<b>Passport:</b> make sure it is valid for your entire trip."><b>Pasaporte:</b> revisa que esté vigente durante todo tu viaje.</p>
+        <p data-en="<b>Airport to hotel:</b> you will arrive at Mexico City International Airport (MEX). To get to Polanco or Reforma, use Uber, DiDi or the authorized airport taxis you pay for inside the terminal. Do not hail taxis on the street."><b>Del aeropuerto al hotel:</b> llegarás al Aeropuerto Internacional de la Ciudad de México (AICM). Para ir a Polanco o Reforma usa Uber, DiDi o los taxis autorizados que se pagan dentro del aeropuerto. No tomes taxis en la calle.</p>
+        <p data-en="<b>Money:</b> most places take cards. Let your bank know you are traveling to Mexico, check the exchange rate before you go, and withdraw pesos from bank ATMs."><b>Dinero:</b> casi todo acepta tarjeta. Avisa a tu banco que viajarás a México, consulta el tipo de cambio antes de salir y retira pesos en cajeros de bancos.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONOCE LA CDMX -->
+  <section class="section-surface cdmx">
+    <div class="container">
+      <div class="eyebrow" data-en="If you arrive early">Si llegas unos días antes</div>
+      <h2 data-en="Explore <em>Mexico City</em>">Conoce la <em>CDMX</em></h2>
+      <p class="sec-intro" data-en="If you arrive a few days early, here are some ideas to enjoy the city.">Si llegas unos días antes, te dejamos algunas ideas para disfrutar la ciudad.</p>
+      <div class="day-scroller">
+        <article class="day-card"><div class="day-img"><img src="cdmx/angel.webp" alt="" loading="lazy" decoding="async"></div><div class="day-body"><h4 class="day-h" data-en="Sun 11 · Arrival">Dom 11 · Llegada</h4><p class="day-t" data-en="Paseo de la Reforma, Angel of Independence, Polanco (Lincoln Park and Masaryk Ave.), Zona Rosa">Paseo de la Reforma, Ángel de la Independencia, Polanco (Parque Lincoln y Av. Masaryk), Zona Rosa</p><div class="day-links"><a href="https://es.wikipedia.org/wiki/Columna_de_la_Independencia" target="_blank" rel="noopener">Ángel de la Independencia</a><a href="https://es.wikipedia.org/wiki/Paseo_de_la_Reforma" target="_blank" rel="noopener">Paseo de la Reforma</a></div></div></article>
+        <article class="day-card"><div class="day-img"><img src="cdmx/zocalo.webp" alt="" loading="lazy" decoding="async"></div><div class="day-body"><h4 class="day-h" data-en="Mon 12 · Historic Center on foot">Lun 12 · Centro Histórico a pie</h4><p class="day-t" data-en="Zócalo, Metropolitan Cathedral, National Palace (outside), Gran Hotel Ciudad de México, Madero St., Bellas Artes (outside), Torre Latinoamericana, Turibús. Museums are closed on Mondays.">Zócalo, Catedral Metropolitana, Palacio Nacional (exterior), Gran Hotel Ciudad de México, Calle Madero, Bellas Artes (exterior), Torre Latinoamericana, Turibús. Los museos cierran los lunes.</p><div class="day-links"><a href="https://es.wikipedia.org/wiki/Plaza_de_la_Constituci%C3%B3n_(Ciudad_de_M%C3%A9xico)" target="_blank" rel="noopener">Zócalo</a><a href="https://es.wikipedia.org/wiki/Catedral_Metropolitana_de_la_Ciudad_de_M%C3%A9xico" target="_blank" rel="noopener">Catedral</a><a href="https://es.wikipedia.org/wiki/Gran_Hotel_Ciudad_de_M%C3%A9xico" target="_blank" rel="noopener">Gran Hotel</a><a href="https://es.wikipedia.org/wiki/Torre_Latinoamericana" target="_blank" rel="noopener">Torre Latinoamericana</a><a href="https://turibus.com.mx" target="_blank" rel="noopener">Turibús</a></div></div></article>
+        <article class="day-card"><div class="day-img"><img src="cdmx/bellas.webp" alt="" loading="lazy" decoding="async"></div><div class="day-body"><h4 class="day-h" data-en="Tue 13 · Downtown museums">Mar 13 · Museos del Centro</h4><p class="day-t" data-en="Templo Mayor, Palacio de Bellas Artes Museum, Postal Palace, House of Tiles, La Ciudadela crafts market">Templo Mayor, Museo del Palacio de Bellas Artes, Palacio Postal, Casa de los Azulejos, Mercado de Artesanías La Ciudadela</p><div class="day-links"><a href="https://es.wikipedia.org/wiki/Templo_Mayor" target="_blank" rel="noopener">Templo Mayor</a><a href="https://es.wikipedia.org/wiki/Palacio_de_Bellas_Artes" target="_blank" rel="noopener">Bellas Artes</a><a href="https://es.wikipedia.org/wiki/Palacio_Postal" target="_blank" rel="noopener">Palacio Postal</a><a href="https://es.wikipedia.org/wiki/Casa_de_los_Azulejos" target="_blank" rel="noopener">Casa de los Azulejos</a></div></div></article>
+        <article class="day-card"><div class="day-img"><img src="cdmx/teoti.webp" alt="" loading="lazy" decoding="async"></div><div class="day-body"><h4 class="day-h" data-en="Wed 14 · Teotihuacán &amp; the Basilica">Mié 14 · Teotihuacán y Basílica</h4><p class="day-t" data-en="Pyramids of the Sun and the Moon, Avenue of the Dead, Basilica of Guadalupe, Tlatelolco. Full-day tour with an operator.">Pirámides del Sol y de la Luna, Calzada de los Muertos, Basílica de Guadalupe, Tlatelolco. Día completo con operadora.</p><div class="day-links"><a href="https://es.wikipedia.org/wiki/Teotihuacan" target="_blank" rel="noopener">Teotihuacán</a><a href="https://es.wikipedia.org/wiki/Bas%C3%ADlica_de_Santa_Mar%C3%ADa_de_Guadalupe" target="_blank" rel="noopener">Basílica</a><a href="https://es.wikipedia.org/wiki/Plaza_de_las_Tres_Culturas" target="_blank" rel="noopener">Plaza de las Tres Culturas</a></div></div></article>
+        <article class="day-card"><div class="day-img"><img src="cdmx/castillo.webp" alt="" loading="lazy" decoding="async"></div><div class="day-body"><h4 class="day-h" data-en="Thu 15 · Chapultepec">Jue 15 · Chapultepec</h4><p class="day-t" data-en="Chapultepec Castle, forest and lake, National Museum of Anthropology, free afternoon in Polanco">Castillo de Chapultepec, Bosque y lago, Museo Nacional de Antropología, tarde libre en Polanco</p><div class="day-links"><a href="https://es.wikipedia.org/wiki/Castillo_de_Chapultepec" target="_blank" rel="noopener">Castillo</a><a href="https://es.wikipedia.org/wiki/Museo_Nacional_de_Antropolog%C3%ADa_(M%C3%A9xico)" target="_blank" rel="noopener">Antropología</a></div></div></article>
+        <article class="day-card"><div class="day-img"><img src="cdmx/coyoacan.webp" alt="" loading="lazy" decoding="async"></div><div class="day-body"><h4 class="day-h" data-en="Fri 16 · Coyoacán">Vie 16 · Coyoacán</h4><p class="day-t" data-en="Frida Kahlo Museum (Blue House; buy tickets online in advance), Jardín Centenario, Coyoacán Market. Free afternoon to rest.">Museo Frida Kahlo (Casa Azul; boletos en línea con anticipación), Jardín Centenario, Mercado de Coyoacán. Tarde libre para descansar.</p><div class="day-links"><a href="https://www.museofridakahlo.org.mx" target="_blank" rel="noopener">Museo Frida Kahlo</a><a href="https://es.wikipedia.org/wiki/Coyoac%C3%A1n" target="_blank" rel="noopener">Coyoacán</a></div></div></article>
+        <article class="day-card"><div class="day-img day-img--wed"><span>17</span></div><div class="day-body"><h4 class="day-h" data-en="Sat 17 · Wedding day">Sáb 17 · ¡La boda!</h4><p class="day-t" data-en="Covadonga Church (arrival 12:30 p.m., Mass 1:00 p.m.), Finca La Gloria, after-party in Xochimilco">Iglesia de la Covadonga (llegada 12:30 p. m., misa 1:00 p. m.), Finca La Gloria, tornafiesta en Xochimilco</p><div class="day-links"><a href="https://www.google.com/maps/search/?api=1&amp;query=Parroquia%20Nuestra%20Se%C3%B1ora%20de%20Covadonga%20Paseo%20de%20las%20Palmas%20406%20Lomas%20de%20Chapultepec" target="_blank" rel="noopener">Iglesia (mapa)</a><a href="https://www.google.com/maps/search/?api=1&amp;query=Finca%20La%20Gloria%20Av.%20M%C3%A9xico%205665%20La%20Noria%20Xochimilco" target="_blank" rel="noopener">Finca La Gloria (mapa)</a></div></div></article>
+        <article class="day-card"><div class="day-img"><img src="cdmx/soumaya.webp" alt="" loading="lazy" decoding="async"></div><div class="day-body"><h4 class="day-h" data-en="Sun 18 · Farewell">Dom 18 · Despedida</h4><p class="day-t" data-en="Soumaya Museum (free admission), brunch at the Gran Hotel terrace, airport transfers">Museo Soumaya (entrada gratuita), brunch en la Terraza del Gran Hotel, traslados al aeropuerto</p><div class="day-links"><a href="https://es.wikipedia.org/wiki/Museo_Soumaya" target="_blank" rel="noopener">Museo Soumaya</a></div></div></article>
+        <article class="day-card"><div class="day-img"><img src="cdmx/templo.webp" alt="" loading="lazy" decoding="async"></div><div class="day-body"><h4 class="day-h" data-en="Extra">Extra</h4><p class="day-t" data-en="Dolores Olmedo Museum (reopened in 2026, in La Noria, Xochimilco); day trip to Puebla and Cholula">Museo Dolores Olmedo (reabrió en 2026, en La Noria, Xochimilco); excursión a Puebla y Cholula</p><div class="day-links"><a href="https://museodoloresolmedo.org.mx" target="_blank" rel="noopener">Museo Dolores Olmedo</a><a href="https://es.wikipedia.org/wiki/San_Pedro_Cholula" target="_blank" rel="noopener">Cholula</a></div></div></article>
+      </div>
+      <p class="sec-small" data-en="Swipe to see each day →">Desliza para ver cada día →</p>
+      <p class="sec-small credit">Fotos: Wikimedia Commons</p>
+    </div>
+  </section>
+
   <!-- DRESS CODE -->
   <section class="has-flor section-bg dress">
     <div class="ink-bg" aria-hidden="true"><i style="background-image:url(ink/ink-footer.webp)"></i></div>
     
     <div class="container">
-      <div class="eyebrow">Código de vestimenta</div>
-      <h2>Formal <em>&amp; Dinámico</em></h2>
+      <div class="eyebrow" data-en="Dress code">Código de vestimenta</div>
+      <h2 data-en="Dress <em>code</em>">Formal <em>&amp; Dinámico</em></h2>
 
       <div class="dress-block">
         <div class="dress-figs">
-          <figure class="dress-fig"><img src="caballero.png" alt="Caballero" loading="lazy" decoding="async"><figcaption>Caballeros</figcaption></figure>
-          <figure class="dress-fig"><img src="dama.png" alt="Dama" loading="lazy" decoding="async"><figcaption>Damas</figcaption></figure>
+          <figure class="dress-fig"><img src="caballero.png" alt="Caballero" loading="lazy" decoding="async"><figcaption data-en="Gentlemen">Caballeros</figcaption></figure>
+          <figure class="dress-fig"><img src="dama.png" alt="Dama" loading="lazy" decoding="async"><figcaption data-en="Ladies">Damas</figcaption></figure>
         </div>
         <div class="dress-card">
-          <h3 class="dress-card-title">Un día con tres momentos</h3>
-          <p>Este día será muy especial para nosotros, así como dinámico; les pedimos planear acorde.</p>
-          <p><strong>Ceremonia religiosa</strong> · Formal.</p>
-          <p><strong>Recepción</strong> · Mujeres: cóctel / Chanel. Hombres: guayabera.</p>
-          <p><strong>Tornafiesta en Xochimilco</strong> · Jeans &amp; tenis.</p>
-
+          <h3 class="dress-card-title" data-en="A day with three moments">Un día con tres momentos</h3>
+          <p data-en="<strong>Ceremony</strong> · Formal."><strong>Ceremonia</strong> · Formal.</p>
+          <p data-en="<strong>Reception</strong> · Ladies: cocktail or tea-length dress. Gentlemen: guayabera with dress pants."><strong>Recepción</strong> · Mujeres: vestido de cóctel o Chanel (a media pierna). Hombres: guayabera con pantalón de vestir.</p>
+          <p data-en="<strong>After-party in Xochimilco</strong> · We suggest jeans and sneakers so you can be comfortable."><strong>Tornafiesta en Xochimilco</strong> · Te sugerimos jeans y tenis para estar cómodo.</p>
           <div class="dress-avoid">
-            <p style="font-family:var(--italiana);font-size:14px;letter-spacing:.05em;color:var(--ink-soft);margin:0 0 10px;text-transform:none">Colores a evitar</p>
+            <p style="font-family:var(--italiana);font-size:14px;letter-spacing:.05em;color:var(--ink-soft);margin:0 0 10px;text-transform:none" data-en="Please avoid">Por favor evita</p>
             <div class="sw-row" id="sw-avoid">
-              <span class="sw"><i style="background:#ffffff"></i><b>Blanco</b></span>
-              <span class="sw"><i style="background:#faf9f9"></i><b>Hueso</b></span>
-              <span class="sw"><i style="background:#f50505"></i><b>Rojo</b></span>
+              <span class="sw"><i style="background:#ffffff"></i><b data-en="White">Blanco</b></span>
+              <span class="sw"><i style="background:#faf9f9"></i><b data-en="Ivory">Hueso</b></span>
+              <span class="sw"><i style="background:#f50505"></i><b data-en="Red">Rojo</b></span>
             </div>
-            <p style="font-family:var(--italiana);font-size:13px;letter-spacing:.04em;color:var(--ink-soft);margin:8px 0 0;text-transform:none">El blanco es exclusivo de la novia.</p>
+            <p style="font-family:var(--italiana);font-size:13px;letter-spacing:.04em;color:var(--ink-soft);margin:8px 0 0;text-transform:none" data-en="White is reserved for the bride.">El blanco es exclusivo de la novia.</p>
           </div>
           
         </div>
@@ -1763,8 +1912,8 @@ h2{margin-top:-.22em}
   <!-- GALLERY -->
   <section class="gallery" aria-label="Galería de fotos">
     <div class="gallery-head">
-      <div class="eyebrow rv">Nuestros momentos</div>
-      <h2>Nuestros <em>recuerdos</em></h2>
+      <div class="eyebrow rv" data-en="Our moments">Nuestros momentos</div>
+      <h2 data-en="Our <em>memories</em>">Nuestros <em>recuerdos</em></h2>
       <div class="gallery-sub rv">Alejandra &amp; Josef</div>
     </div>
     <div class="wheel-scene rv" id="wheel-scene">
@@ -1782,37 +1931,17 @@ h2{margin-top:-.22em}
         <div class="wheel-card"><img src="anillo.webp" alt="Alejandra y Josef"><div class="wheel-refl" aria-hidden="true"><img src="anillo.webp" alt=""></div></div>
       </div>
     </div>
-    <p class="gal-hint">arrastra para girar</p>
+    <p class="gal-hint" data-en="drag to spin">arrastra para girar</p>
   </section>
-
-  <div class="seam" style="--from:var(--bg);--to:var(--paper)" aria-hidden="true"></div>
-
-  <!-- SOLO ADULTOS · NO NIÑOS -->
-  <section class="section-paper kids-policy">
-    <div class="ftop" aria-hidden="true"><i class="ftop-back"></i><i class="ftop-front"></i></div>
-    <div class="container">
-      <div class="kids-icon" aria-hidden="true">
-        <svg viewBox="0 0 24 24"><path d="M8 3h8l-1 7a3 3 0 01-6 0L8 3z"/><line x1="12" y1="13" x2="12" y2="20"/><line x1="8" y1="20" x2="16" y2="20"/></svg>
-      </div>
-      <div class="kids-eyebrow-stack">
-        <div class="eyebrow" style="margin-bottom:8px">Solo adultos</div>
-        <div class="eyebrow eyebrow--plain kids-eyebrow-sub">No niños</div>
-      </div>
-      <h2>Una noche <em>para grandes</em></h2>
-      <p class="kids-text">Con todo nuestro cariño, hemos decidido que nuestra celebración sea exclusiva para adultos. Confiamos en que esta noche puedas disfrutarla con nosotros sin preocupaciones. Gracias por tu comprensión.</p>
-    </div>
-  </section>
-
-  <div class="seam" style="--from:var(--paper);--to:var(--surface)" aria-hidden="true"></div>
 
   <!-- MESA DE REGALOS / LLUVIA DE SOBRES -->
   <section class="has-flor section-surface gifts" style="padding:min(12vh,110px) 0 min(14vh,130px);text-align:center;" aria-label="Mesa de regalos">
     <div class="ink-bg ink-oval" aria-hidden="true"><i style="background-image:url(ink/ink-oval.webp)"></i></div>
-    <div class="fband fband-flip" aria-hidden="true"><i style="background-image:url(floral/bg-footer.webp)"></i></div>
+    <div class="fband fband-flip" aria-hidden="true"><i style="background-image:url(floral/hero-bottom.webp)"></i></div>
     <div class="container">
       <div class="gifts-head">
-        <h2 style="margin-bottom:16px;">Un detalle <em>de corazón</em></h2>
-        <p class="gifts-sub">Ya tenemos todo lo necesario para nuestro hogar. Pero si deseas tener un detalle con nosotros, agradeceremos de corazón cualquier aportación en sobre o transferencia.</p>
+        <h2 style="margin-bottom:16px;" data-en="A gift <em>from the heart</em>">Un detalle <em>de corazón</em></h2>
+        <p class="gifts-sub" data-en="Your presence is the greatest gift of all. If you would like to give us something, you may bring an envelope on the wedding day (there will be a gift box) or send a bank transfer.">Su presencia es el mejor regalo que podemos recibir. Si desean tener un detalle con nosotros, pueden hacerlo en sobre el día de la boda (tendremos un buzón) o por transferencia.</p>
       </div>
 
       <div class="env-rain" id="envRain" aria-hidden="true"></div>
@@ -1837,14 +1966,17 @@ h2{margin-top:-.22em}
           </svg>
         </div>
         <div class="eg-open" aria-live="polite">
-          <p class="eg-title">Tu presencia es nuestro regalo</p>
-          <p class="eg-desc">Si deseas tener un detalle con nosotros, el día de la boda habrá un buzón donde podrás depositar tu sobre con cariño.</p>
+          <p class="eg-title" data-en="Your presence is our gift">Tu presencia es nuestro regalo</p>
+          <p class="eg-desc" data-en="On the wedding day there will be a gift box where you can leave your envelope.">El día de la boda habrá un buzón donde podrás depositar tu sobre con cariño.</p>
         </div>
       </button>
-      <button class="eg-hint" id="envGiftHint" type="button">Toca para abrir</button>
+      <button class="eg-hint" id="envGiftHint" type="button" data-en="Tap to open">Toca para abrir</button>
       </div>
 
-      <!-- CLABES: PENDIENTE (mesa de regalos por confirmar) -->
+      <div class="info-card bank">
+        <h3 class="info-h" data-en="Bank transfer details">Datos para transferencia</h3>
+        <p data-en="<b>Bank:</b> to be confirmed<br><b>Account holder:</b> to be confirmed<br><b>Account / CLABE:</b> to be confirmed"><b>Banco:</b> por confirmar<br><b>Titular:</b> por confirmar<br><b>Cuenta / CLABE:</b> por confirmar</p>
+      </div>
     </div>
   </section>
 
@@ -1855,18 +1987,28 @@ h2{margin-top:-.22em}
     
     <div class="ink-bg" aria-hidden="true"><i style="background-image:url(ink/ink-corner.webp)"></i></div>
     <div class="container">
-      <div class="eyebrow">Comparte el momento</div>
-      <h2>Nuestro <em>álbum</em></h2>
+      <div class="eyebrow" data-en="Share the moment">Comparte el momento</div>
+      <h2 data-en="Our <em>album</em>">Nuestro <em>álbum</em></h2>
       <div class="album-wrap">
-        <p class="album-text">Después de la boda, sube tus fotos y videos a nuestro álbum compartido. Será nuestro recuerdo colectivo de esta noche tan especial.</p>
+        <p class="album-text" data-en="After the wedding, upload your photos and videos to our shared album. It will be our collective memory of this special night.">Después de la boda, sube tus fotos y videos a nuestro álbum compartido. Será nuestro recuerdo colectivo de esta noche tan especial.</p>
         <div class="album-qr"><img src="album-qr.png" alt="Código QR del álbum compartido" loading="lazy" decoding="async"></div>
-        <a class="album-btn" aria-disabled="true" href="#">Enlace por confirmar</a>
+        <a class="album-btn" aria-disabled="true" href="#" data-en="Link coming soon">Enlace por confirmar</a>
       </div>
     </div>
   </section>
 
   <div class="seam" style="--from:var(--surface);--to:var(--bg)" aria-hidden="true"></div>
 
+
+  <!-- SUGIERE UNA CANCIÓN -->
+  <section class="section-paper song">
+    <div class="container">
+      <div class="eyebrow" data-en="Playlist">Playlist</div>
+      <h2 data-en="Suggest a <em>song</em>">Sugiere una <em>canción</em></h2>
+      <p class="sec-intro" data-en="Help us build the party playlist! Add your songs to our collaborative Spotify playlist. What song will get you on the dance floor? You can also write it in your RSVP.">¡Ayúdanos a armar la fiesta! Agrega tus canciones a nuestra playlist colaborativa de Spotify. ¿Qué canción no puede faltar para que bailes toda la noche? También puedes escribirla en tu RSVP.</p>
+      <a class="pill-btn is-disabled" aria-disabled="true"><span data-en="Spotify playlist · coming soon">Playlist de Spotify · próximamente</span></a>
+    </div>
+  </section>
   <!-- RSVP -->
   <section class="section-bg rsvp" id="rsvp" style="display:none" aria-hidden="true">
     <div class="ink-bg ink-flip ink-oval" aria-hidden="true"><i style="background-image:url(ink/ink-oval.webp)"></i></div>
@@ -1892,9 +2034,9 @@ h2{margin-top:-.22em}
             </g>
           </svg>
 
-          <div class="eyebrow">Confirma tu asistencia</div>
-          <h2 class="rsvp-title">Tu presencia <em>lo es</em> todo</h2>
-          <p class="rsvp-text">Nos encantaría contar contigo. Por favor confirma tu asistencia dando un toque al botón.</p>
+          <div class="eyebrow" data-en="RSVP">Confirma tu asistencia</div>
+          <h2 class="rsvp-title" data-en="Your presence <em>means</em> everything">Tu presencia <em>lo es</em> todo</h2>
+          <p class="rsvp-text" data-en="Please RSVP no later than <b>January 15, 2027</b>. If we have not heard from you by then, we will understand that you are unable to attend. Thank you for helping us plan this special day!">Por favor confirma tu asistencia a más tardar el <b>15 de enero de 2027</b>. Si no recibimos tu respuesta para esa fecha, entenderemos que no podrás acompañarnos. ¡Gracias por ayudarnos a organizar este gran día!</p>
 
           <div class="rsvp-divider">
             <svg class="rsvp-divider-heart" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 21.593c-5.63-5.539-11-10.297-11-14.402 0-3.791 3.068-5.191 5.281-5.191 1.312 0 4.151.501 5.719 4.457 1.59-3.968 4.464-4.447 5.726-4.447 2.54 0 5.274 1.621 5.274 5.181 0 4.069-5.136 8.625-11 14.402z"/></svg>
@@ -1907,11 +2049,19 @@ h2{margin-top:-.22em}
           </div>
 
           <div class="rsvp-toggle">
-            <button class="rsvp-toggle-btn" id="btnYes" type="button">Asistiré</button>
-            <button class="rsvp-toggle-btn" id="btnNo" type="button">No podré asistir</button>
+            <button class="rsvp-toggle-btn" id="btnYes" type="button" data-en="I will attend">Asistiré</button>
+            <button class="rsvp-toggle-btn" id="btnNo" type="button" data-en="I can’t attend">No podré asistir</button>
           </div>
 
           <div class="rsvp-fields" id="rsvp-fields" style="display:none"></div>
+          <div class="rsvp-extra" id="rsvp-extra" style="display:none">
+            <div class="rq"><p class="rq-l" data-en="Will you join the after-party in Xochimilco?">¿Asistirás a la tornafiesta en Xochimilco?</p><div class="rq-opts" data-q="tornafiesta"><button type="button" data-v="si"><span data-en="Yes">Sí</span></button><button type="button" data-v="no">No</button></div></div>
+            <div class="rq"><p class="rq-l" data-en="Will you use the guest shuttle?">¿Usarás el transporte para invitados?</p><div class="rq-opts" data-q="transporte"><button type="button" data-v="si"><span data-en="Yes">Sí</span></button><button type="button" data-v="no">No</button></div></div>
+            <div class="rq"><p class="rq-l" data-en="Which hotel will you stay at?">¿En qué hotel te hospedarás?</p>
+              <select id="rq-hotel" class="rsvp-input"><option value="">—</option><option>Presidente InterContinental</option><option>JW Marriott Polanco</option><option>Sheraton Maria Isabel</option><option value="otro" data-en="Other / with family">Otro / con familia</option></select></div>
+            <div class="rq"><p class="rq-l" data-en="Suggest a song">Sugiere una canción</p><input id="rq-song" class="rsvp-input" maxlength="80" placeholder="Canción · artista" data-en-ph="Song · artist"></div>
+            <div class="rq"><p class="rq-l" data-en="Leave them a message — Advice, a wish, a blessing? Write a few words for Alejandra &amp; Josef; we will keep them as a keepsake of this special day.">Déjales un mensaje — ¿Un consejo, un deseo, una bendición? Escríbeles unas palabras a Alejandra y Josef; las guardaremos como recuerdo de este gran día.</p><textarea id="rq-msg" class="rsvp-input" rows="3" maxlength="500"></textarea></div>
+          </div>
 
           <button class="rsvp-btn" id="rsvp-wa-btn" type="button">
             <span id="rsvp-btn-text">Confirmar Asistencia</span>
@@ -1922,21 +2072,31 @@ h2{margin-top:-.22em}
             <svg class="rt-heart" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21.6C6.4 16.1 1 11.3 1 7.2 1 3.4 4.1 2 6.3 2c1.3 0 4.2.5 5.7 4.5C13.6 2.5 16.5 2 17.7 2 20.3 2 23 3.6 23 7.2c0 4.1-5.1 8.6-11 14.4z"/></svg>
             <p class="rt-title"></p>
             <p class="rt-text"></p>
-            <button type="button" id="rsvp-modify" class="rt-mod">Modificar mi respuesta</button>
+            <button type="button" id="rsvp-modify" class="rt-mod" data-en="Change my response">Modificar mi respuesta</button>
           </div>
 
           <div class="rsvp-deadline">
             <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm.5 5v5.25l4.5 2.67-.75 1.23L11 13V7h1.5z"/></svg>
-            Confirma antes del 15 de enero de 2027
+            <span data-en="RSVP by January 15, 2027">Confirma antes del 15 de enero de 2027</span>
           </div>
         </div>
       </div>
     </div>
   </section>
 
+
+  <!-- CONTACTO -->
+  <section class="section-surface contact">
+    <div class="container">
+      <div class="eyebrow" data-en="Contact">Contacto</div>
+      <h2 data-en="Any <em>questions</em>?">¿Tienes <em>dudas</em>?</h2>
+      <p class="sec-intro" data-en="Message us on WhatsApp:<br><b>Denisse Romero</b> (mother of the bride): +1 (678) 467-8087">Escríbenos por WhatsApp:<br><b>Denisse Romero</b> (mamá de la novia): +1 (678) 467-8087</p>
+      <a class="pill-btn" href="https://wa.me/16784678087" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+  </section>
   <!-- FOOTER -->
   <footer class="has-flor">
-    <div class="fband" aria-hidden="true"><i style="background-image:url(floral/bg-footer.webp)"></i></div>
+    <div class="fband" aria-hidden="true"><i style="background-image:url(floral/hero-bottom.webp)"></i></div>
     <div class="container footer-inner">
       <svg class="footer-ornament" viewBox="0 0 260 60" fill="none" aria-hidden="true">
         <g stroke="var(--gold-soft)" stroke-width=".8" fill="none">
@@ -1947,9 +2107,9 @@ h2{margin-top:-.22em}
         </g>
       </svg>
       <div class="footer-names">Alejandra <span class="amp">&amp;</span> Josef</div>
-      <div class="footer-date">17 · Julio · 2027 · Ciudad de México</div>
+      <div class="footer-date" data-en="July 17, 2027 · Mexico City">17 de julio de 2027 · Ciudad de México</div>
       <div class="footer-credit">
-        <span>Invitación diseñada por &nbsp;</span>
+        <span data-en="Invitation designed by &nbsp;">Invitación diseñada por &nbsp;</span>
         <a href="https://www.instagram.com/elysium.invitaciones/" target="_blank" rel="noopener">
           <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
             <rect x="3" y="3" width="18" height="18" rx="5"/>
@@ -2062,11 +2222,13 @@ const prefersReduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
       btnNo.className  = 'rsvp-toggle-btn';
       renderFields(pasesAsignados);
       fieldsEl.style.display = 'flex';
+      var ex = document.getElementById('rsvp-extra'); if(ex) ex.style.display = 'block';
     } else {
       btnYes.className = 'rsvp-toggle-btn';
       btnNo.className  = 'rsvp-toggle-btn rsvp-toggle-selected-no';
       fieldsEl.style.display = 'none';
       fieldsEl.innerHTML = '';
+      var ex2 = document.getElementById('rsvp-extra'); if(ex2) ex2.style.display = 'none';
     }
   }
 
@@ -2145,7 +2307,8 @@ const prefersReduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
         url_boda: RSVP_URL,
         estado: rsvpChoice === 'yes' ? 'confirmado' : 'declino',
         pases_confirmados: rsvpChoice === 'yes' ? nombres.length : 0,
-        nombres_confirmados: nombres
+        nombres_confirmados: nombres,
+        respuestas: (function(){ var r={}; document.querySelectorAll('.rq-opts').forEach(function(g){ var on=g.querySelector('.on'); r[g.getAttribute('data-q')] = on ? on.getAttribute('data-v') : null; }); var h=document.getElementById('rq-hotel'), so=document.getElementById('rq-song'), m=document.getElementById('rq-msg'); r.hotel=h?h.value:''; r.cancion=so?so.value.trim():''; r.mensaje=m?m.value.trim():''; return r; })()
       })
     })
     .then(function(r){ return r.json(); })
@@ -2961,6 +3124,47 @@ window.addEventListener('resize',()=>ScrollTrigger.refresh());
   track.addEventListener('touchstart',function(e){sx=e.touches[0].clientX;sy=e.touches[0].clientY;},{passive:true});
   track.addEventListener('touchend',function(e){var dx=e.changedTouches[0].clientX-sx,dy=e.changedTouches[0].clientY-sy;if(Math.abs(dx)>40&&Math.abs(dx)>Math.abs(dy)){go(dx<0?idx+1:idx-1);auto();}},{passive:true});
   go(0); auto();
+})();
+
+// ====== Idioma ES/EN, modo después de la boda ======
+(function(){
+  var lang = 'es';
+  try{ var sv = localStorage.getItem('aj-lang'); if(sv) lang = sv; else if((navigator.language||'').toLowerCase().indexOf('en')===0) lang='en'; }catch(e){}
+  function apply(l){
+    lang = l; document.documentElement.lang = l;
+    try{ localStorage.setItem('aj-lang', l); }catch(e){}
+    document.querySelectorAll('[data-en]').forEach(function(el){
+      if(el.getAttribute('data-es') === null) el.setAttribute('data-es', el.innerHTML);
+      el.innerHTML = l === 'en' ? el.getAttribute('data-en') : el.getAttribute('data-es');
+    });
+    document.querySelectorAll('[data-en-ph]').forEach(function(el){
+      if(el.getAttribute('data-es-ph') === null) el.setAttribute('data-es-ph', el.getAttribute('placeholder')||'');
+      el.setAttribute('placeholder', l === 'en' ? el.getAttribute('data-en-ph') : el.getAttribute('data-es-ph'));
+    });
+    var t = document.getElementById('lang-toggle');
+    if(t){ t.querySelector('[data-l="es"]').classList.toggle('on', l==='es'); t.querySelector('[data-l="en"]').classList.toggle('on', l==='en'); }
+  }
+  window.ajLang = function(){ return lang; };
+  document.querySelectorAll('#env-hint [data-lang]').forEach(function(b){
+    b.addEventListener('pointerdown', function(){ apply(b.getAttribute('data-lang')); }, true);
+    b.addEventListener('click', function(){ apply(b.getAttribute('data-lang')); });
+  });
+  var tg = document.createElement('button'); tg.id='lang-toggle'; tg.type='button'; tg.className='lang-toggle';
+  tg.innerHTML='<span data-l="es">ES</span><i></i><span data-l="en">EN</span>';
+  tg.addEventListener('click', function(){ apply(lang==='es'?'en':'es'); });
+  document.body.appendChild(tg);
+  if(lang==='en') apply('en'); else apply('es');
+
+  // preguntas Sí/No del RSVP
+  document.querySelectorAll('.rq-opts').forEach(function(g){
+    g.querySelectorAll('button').forEach(function(b){ b.addEventListener('click', function(){ g.querySelectorAll('button').forEach(function(x){x.classList.remove('on');}); b.classList.add('on'); }); });
+  });
+
+  // Después del 17 de julio de 2027: página de agradecimiento
+  if(Date.now() > new Date('2027-07-18T06:00:00-06:00').getTime()){
+    var aw = document.getElementById('after-wedding'); if(aw) aw.hidden = false;
+    ['#rsvp','.countdown','.song','.tips','.cdmx','.hospedaje'].forEach(function(q){ var e=document.querySelector(q); if(e) e.style.display='none'; });
+  }
 })();
 </script>
 </body>
