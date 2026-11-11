@@ -1406,6 +1406,8 @@ h2{margin-top:-.22em}
 #envelope-screen.env-aj #env-hint.ld-lang{position:absolute!important;left:50%!important;bottom:calc(76px + env(safe-area-inset-bottom))!important;transform:translateX(-50%)!important;top:auto!important;z-index:3;opacity:1;animation:none}
 #envelope-screen.env-aj .ld-lang button{background:rgba(255,253,249,.92);box-shadow:0 8px 22px -10px rgba(140,17,73,.5)}
 .env-tap-aj{position:absolute;left:0;right:0;bottom:calc(36px + env(safe-area-inset-bottom));z-index:3;text-align:center;font-family:var(--display);font-weight:700;font-size:15px;letter-spacing:.14em;color:#8C1149;text-shadow:0 0 10px rgba(255,253,249,.95),0 0 3px #fff;margin:0;animation:egPulse 2.4s ease-in-out infinite}
+
+#envelope-screen.is-opened #env-hint,#envelope-screen.is-opened .env-tap-aj{opacity:0!important;animation:none!important;transition:opacity .3s;pointer-events:none}
 </style>
 </head>
 <body>
@@ -2523,7 +2525,7 @@ function launchInvitation(){
     startMusic();
 
     // Ocultar hint
-    gsap.to(['#env-hint','.env-tap-aj'],{opacity:0,duration:.25});
+    envScreen.classList.add('is-opened');
 
     if(envVideo){
       // Cruzar: imagen → video
